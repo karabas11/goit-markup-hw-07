@@ -3,3 +3,18 @@ body {
     font-family: 'Roboto', sans-serif;
     color: #212121;
 }
+
+.webstudio {
+    font-family: 'Raleway', sans-serif;
+    color: #000000; font-weight: 700;
+}
+
+.webstudio:hover,
+.webstudio:focus {
+    font-weight: 900;
+}
+
+.ws-blue {
+    color: #2196F3;
+
+}
