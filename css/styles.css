@@ -1,9 +1,25 @@
-/* font add */
-body {
-    font-family: 'Roboto', sans-serif;
-    color: #212121;
+:root {
+    --font-color-man: #757575;
+    --font-color-title: #212121;
+    --font-color-on: #2196F3;
+    --border-color: #ECECEC;
+    --font-color-white:#FFFFFF;
+
 }
 
+/* add font and background*/
+body {
+    font-family: 'Roboto', sans-serif;
+    color: var(--font-color-man);
+    background: #F5F5F5
+ 
+}
+/* title */
+h2, h3, .nav-link {
+    color: var(--font-color-title);
+
+}
+/* logo */
 .webstudio {
     font-family: 'Raleway', sans-serif;
     color: #000000; font-weight: 700;
@@ -15,6 +31,13 @@ body {
 }
 
 .ws-blue {
-    color: #2196F3;
+    color: var(--font-color-on);
+}
+
+/* nav */
+.nav .nav-link:hover,
+.nav .nav-link:focus,
+.nav .nav-link:active {
+    color: var(--font-color-on);
 
 }
