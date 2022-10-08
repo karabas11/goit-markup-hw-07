@@ -11,6 +11,10 @@
 body {
     font-family: 'Roboto', sans-serif;
     color: var(--font-color-man);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
     background: #F5F5F5
  
 }
@@ -32,6 +36,7 @@ h2, h3, .link {
 .webstudio {
     font-family: 'Raleway', sans-serif;
     color: #000000; font-weight: 700;
+    font-size: 26px;
 }
 
 .webstudio:hover,
@@ -44,6 +49,7 @@ h2, h3, .link {
 }
 
 /* nav */
+
 .nav .link:hover,
 .nav .link:focus,
 .nav .link.current {
@@ -72,11 +78,9 @@ h2, h3, .link {
     padding: 152px 30px;
     border: solid 1px;
     border-color: var(--font-color-on);
+    /* font-family: inherit; */
     font-size: 16px;
-    line-height: 30px;
-    display: flex;
-    align-items: center;
-    text-align: center;
+    line-height: 1.8;
     letter-spacing: 0.06em;
 
     /* position: absolute;
