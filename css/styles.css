@@ -4,7 +4,6 @@
     --font-color-on: #2196F3;
     --border-color: #ECECEC;
     --font-color-white:#FFFFFF;
-
 }
 
 /* add font and background*/
@@ -57,14 +56,41 @@ h2, h3, .link {
 }
 
 /* Address */
-.address .address-all {
-    font-style:normal;
-}
-
-.address-all {
+.address a {
+    font-style: normal;
     color: var(--font-color-man);
 }
 
+/* .address-map */
+.address .address-map{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px; 
+    letter-spacing: 0.03em;
+    /* color: var(--font-color-white); */
+    color: #000000;
+
+}
+
+.address-up {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+}
+
+.address-all {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 2;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.address-up:focus,
+.address-up:hover,
+.address-map:hover,
+.address-map:focus,
 .address-all:hover,
 .address-all:focus {
     color: var(--font-color-on);
