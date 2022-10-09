@@ -31,6 +31,31 @@ h2, h3, .link {
     color: var(--font-color-title);
 
 }
+
+.link,
+.name {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.2;
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.2;
+    text-align: center;
+}
+
+h3 {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.2;
+}
+
+.advantage {
+    text-transform: uppercase;
+}
+
 /* logo */
 .webstudio {
     font-family: 'Raleway', sans-serif;
@@ -48,6 +73,9 @@ h2, h3, .link {
 }
 
 /* nav */
+.nav {
+    letter-spacing: 0.02em;
+}
 
 .nav .link:hover,
 .nav .link:focus,
