@@ -73,13 +73,13 @@ h3 {
 }
 
 /* nav */
-.nav {
+.nav-site {
     letter-spacing: 0.02em;
 }
 
-.nav .link:hover,
-.nav .link:focus,
-.nav .link.current {
+.nav-site .link:hover,
+.nav-site .link:focus,
+.nav-site .link.current {
     color: var(--font-color-on);
 }
 
@@ -93,7 +93,7 @@ h3 {
 .address .address-map{
     font-weight: 400;
     font-size: 14px;
-    line-height: 24px; 
+    line-height: 2; 
     letter-spacing: 0.03em;
     /* color: var(--font-color-white); */
     color: #000000;
@@ -126,7 +126,7 @@ h3 {
 
 /* button */
 /* ??? разобраться по крупицам */
-.button {
+.button-success {
     color: var(--font-color-white);
     background-color: var(--font-color-on);
     padding: 152px 30px;
@@ -136,6 +136,8 @@ h3 {
     font-size: 16px;
     line-height: 1.8;
     letter-spacing: 0.06em;
+
+    cursor: pointer;
 
     /* position: absolute;
     width: 216px;
