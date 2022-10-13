@@ -26,6 +26,10 @@ a {
     text-decoration:none;
 }
 
+a p {
+    color: var(--font-color-man);
+}
+
 h1 {
     font-style: normal;
     font-weight: 900;
