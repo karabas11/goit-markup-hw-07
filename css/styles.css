@@ -4,6 +4,8 @@
     --font-color-on: #2196F3;
     --border-color: #ECECEC;
     --font-color-white:#FFFFFF;
+    --font-color-button:#F5F4FA;
+
 }
 
 /* add font and background*/
@@ -14,7 +16,7 @@ body {
     font-size: 14px;
     line-height: 1.2;
     letter-spacing: 0.03em;
-    background: #F5F5F5
+    /* background: #F5F5F5 */
  
 }
 
@@ -165,9 +167,35 @@ h3 {
     border-radius: 4px; */
 }
 
+.button-success:hover,
+.button-success:focus {
+    color: var(--font-color-title);
+}
+
+
 /* chaos ??? */
 /* .button:hover,
 .button:focus {
     color: var(--font-color-on);
     background-color: var(--font-color-white);
  } */
+
+ .filter button {
+    color: var(--font-color-title);
+    background-color: var(--font-color-button);
+    /* padding: 152px 30px; */
+    border-radius: 4px;
+    border: solid 1px;
+    border-color: var(--font-color-button);
+    font-family: inherit;
+    font-size: 16px;
+    line-height: 1.8;
+    letter-spacing: 0.06em;
+    
+    cursor: pointer;
+ }
+
+  .filter button:hover,
+  .filter button:focus       {
+    color: var(--font-color-white);
+    background-color: var(--font-color-on);
