@@ -17,7 +17,7 @@ body {
     line-height: 1.2;
     letter-spacing: 0.03em;
     /* background: #F5F5F5 */
- 
+
 }
 
 ul {
@@ -183,3 +183,6 @@ h3 {
   .filter button:focus       {
     color: var(--font-color-white);
     background-color: var(--font-color-on);
+  }
+
+  
