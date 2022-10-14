@@ -185,4 +185,6 @@ h3 {
     background-color: var(--font-color-on);
   }
 
-  
+a img {
+    width:370px;
+}
