@@ -5,14 +5,14 @@
     --border-color: #ECECEC;
     --font-color-white:#FFFFFF;
     --font-color-button:#F5F4FA;
-
+    --font-color-black:#000000;
+    --fon-hero-footer:#2F303A;
 }
 
 /* add font and background*/
 body {
     font-family: 'Roboto', sans-serif;
     color: var(--font-color-man);
-    font-weight: 400;
     font-size: 14px;
     line-height: 1.2;
     letter-spacing: 0.03em;
@@ -39,8 +39,8 @@ h1 {
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    color: #000;
-    /* color: var(--font-color-white); */
+    color:var(--font-color-white);
+
 }
 
 /* title */
@@ -49,7 +49,6 @@ h2, h3, .link {
 
 }
 
-.link,
 .name {
     font-weight: 500;
     font-size: 16px;
@@ -73,15 +72,29 @@ h3 {
     text-transform: uppercase;
 }
 
+.advantage-text {
+    line-height: 2.0;
+}
+
 /* logo */
 .webstudio {
     font-family: 'Raleway', sans-serif;
-    color: #000000; font-weight: 700;
+    color:var(--font-color-black);
+    font-weight: 700;
+    font-size: 26px;
+}
+
+.webstudio-footer {
+    font-family: 'Raleway', sans-serif;
+    color: var(--font-color-white);
+    font-weight: 700;
     font-size: 26px;
 }
 
 .webstudio:hover,
-.webstudio:focus {
+.webstudio:focus, 
+.webstudio-footer:hover,
+.webstudio-footer:focus {
     font-weight: 900;
 }
 
@@ -90,13 +103,15 @@ h3 {
 }
 
 /* nav */
-.nav-site {
+.link {
+    font-weight: 500;
+    line-height: 1.2;
     letter-spacing: 0.02em;
 }
 
-.nav-site .link:hover,
-.nav-site .link:focus,
-.nav-site .link.current {
+.link:hover,
+.link:focus,
+.link.current {
     color: var(--font-color-on);
 }
 
@@ -108,25 +123,20 @@ h3 {
 
 /* .address-map */
 .address .address-map{
-    font-weight: 400;
-    font-size: 14px;
     line-height: 2; 
     letter-spacing: 0.03em;
-    /* color: var(--font-color-white); */
-    color: #000000;
+    color: var(--font-color-white);
+
 
 }
 
 .address-up {
     font-weight: 500;
-    font-size: 14px;
     line-height: 1.2;
     letter-spacing: 0.02em;
 }
 
 .address-all {
-    font-weight: 400;
-    font-size: 14px;
     line-height: 2;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
@@ -141,6 +151,13 @@ h3 {
     color: var(--font-color-on);
 }
 
+
+
+.hero,
+footer {
+    background-color:var(--fon-hero-footer);
+}
+
 /* button */
 /* ??? разобраться по крупицам */
 .button-success {
@@ -150,10 +167,11 @@ h3 {
     border-radius: 4px;
     border: solid 1px;
     border-color: var(--font-color-on);
-    font-family: inherit;
     font-size: 16px;
     line-height: 1.8;
     letter-spacing: 0.06em;
+
+    font-family: inherit;
 
     cursor: pointer;
 
@@ -171,20 +189,37 @@ h3 {
     border-radius: 4px;
     border: solid 1px;
     border-color: var(--font-color-button);
-    font-family: inherit;
     font-size: 16px;
-    line-height: 1.8;
+    line-height: 1.6;
     letter-spacing: 0.06em;
+
+    font-family: inherit;
     
     cursor: pointer;
  }
 
   .filter button:hover,
-  .filter button:focus       {
+  .filter button:focus {
     color: var(--font-color-white);
     background-color: var(--font-color-on);
   }
 
 a img {
     width:370px;
+}
+
+a h2 {
+    color: var(--font-color-title);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;    
+    letter-spacing: 0.06em;
+
+    text-align: left;
+
+}
+
+a p {
+    font-size: 16px;
+    line-height: 1.9;  
 }
