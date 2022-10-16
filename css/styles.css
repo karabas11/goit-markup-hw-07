@@ -121,24 +121,19 @@ h3 {
     color: var(--font-color-man);
 }
 
-/* .address-map */
-.address .address-map{
-    line-height: 2; 
-    letter-spacing: 0.03em;
-    color: var(--font-color-white);
-
-
-}
-
 .address-up {
     font-weight: 500;
     line-height: 1.2;
     letter-spacing: 0.02em;
 }
 
+.address .address-map,
 .address-all {
-    line-height: 2;
-    letter-spacing: 0.03em;
+    line-height: 2; 
+    color: var(--font-color-white);
+}
+
+.address .address-all {
     color: rgba(255, 255, 255, 0.6);
 }
 
@@ -150,8 +145,6 @@ h3 {
 .address-all:focus {
     color: var(--font-color-on);
 }
-
-
 
 .hero,
 footer {
