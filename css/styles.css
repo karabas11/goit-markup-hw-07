@@ -9,6 +9,16 @@
     --fon-hero-footer:#2F303A;
 }
 
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
 /* add font and background*/
 body {
     font-family: 'Roboto', sans-serif;
@@ -17,6 +27,20 @@ body {
     line-height: 1.2;
     letter-spacing: 0.03em;
     /* background: #F5F5F5 */
+}
+
+.container-max-width {
+    margin-right: auto;
+    margin-left: auto;
+    width: 1200px;
+    outline: 2px solid tomato;
+}
+
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    width: 1170px;
+    outline: 2px solid teal;
 }
 
 .address,
