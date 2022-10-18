@@ -63,8 +63,8 @@ body {
 }
 
 /* title */
-.h1-title,
-.portfolio-h1-title {
+.first-title,
+.portfolio-first-title {
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
