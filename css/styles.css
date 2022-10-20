@@ -87,11 +87,17 @@ body {
     font-weight: 500;
     font-size: 16px;
     text-align: center;
+
+    margin-top: 30px;
+    margin-bottom: 0px;
 }
 
 .profession {
     font-size: 16px;
     text-align: center;
+
+    margin-top: 10px;
+    margin-bottom: 0px;
 }
 
 .about-title,
@@ -143,6 +149,9 @@ body {
     color: var(--font-color-white);
     font-weight: 700;
     font-size: 26px;
+
+    /* margin-top: 185px;
+    margin-bottom: 0; */
 }
 
 .webstudio:hover,
@@ -191,6 +200,14 @@ body {
 
 .address-all {
     color: rgba(255, 255, 255, 0.6);
+
+    /* margin-top: 10px;
+    margin-bottom: 0; */
+}
+
+.address-map {
+    /* margin-top: 20px;
+    margin-bottom: 0; */
 }
 
 .address-up:focus,
@@ -205,6 +222,12 @@ body {
 .hero,
 .footer-class {
     background-color:var(--fon-hero-footer);
+}
+
+.footer-class {
+    height: 252px;
+    margin-top: 125px;
+    margin-bottom: 0;
 }
 
 /* button */
