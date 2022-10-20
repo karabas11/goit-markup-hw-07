@@ -7,7 +7,9 @@
     --font-color-button:#F5F4FA;
     --font-color-black:#000000;
     --fon-hero-footer:#2F303A;
-}
+    --fon-comand-section:#F5F4FA;
+    --fon-advantage-fiches-section:#F5F5F5;
+}   
 
 html {
     box-sizing: border-box;
@@ -29,18 +31,42 @@ body {
     /* background: #F5F5F5 */
 }
 
-.container-max-width {
-    margin-right: auto;
-    margin-left: auto;
-    width: 1200px;
-    outline: 2px solid tomato;
-}
-
 .container {
     margin-right: auto;
     margin-left: auto;
     width: 1170px;
     outline: 2px solid teal;
+}
+
+header {
+    background: var(--font-color-white);
+}
+
+section.hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
+
+section.advantage {
+    background: var(--fon-advantage-fiches-section);
+    /* padding-top: 95px; */
+}
+
+section.fiches {
+    background: var(--fon-advantage-fiches-section);
+    padding-top: 95px;
+}
+
+
+section.comand {
+    background: var(--fon-comand-section);
+    padding-top: 95px;
+    padding-bottom: 95px;
+}
+
+.footer-class {
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .address,
@@ -100,7 +126,7 @@ body {
     margin-bottom: 0px;
 }
 
-.about-title,
+/* .about-title, */
 .fiches-title,
 .comand-title {
     color: var(--font-color-title);
@@ -108,11 +134,8 @@ body {
     font-size: 36px;
     line-height: 1.2;
     text-align: center;
-}
 
-.fiches-title,
-.comand-title {
-    margin-top: 95px;
+    margin-top: 0;
     margin-bottom: 0;
 }
 
@@ -122,7 +145,7 @@ body {
     margin-bottom: 0;
 } */
 
-.advantage {
+.advantage-title {
     margin: 0px;
     color: var(--font-color-title);
     font-weight: 700;
@@ -150,8 +173,6 @@ body {
     font-weight: 700;
     font-size: 26px;
 
-    /* margin-top: 185px;
-    margin-bottom: 0; */
 }
 
 .webstudio:hover,
@@ -200,14 +221,15 @@ body {
 
 .address-all {
     color: rgba(255, 255, 255, 0.6);
-
-    /* margin-top: 10px;
-    margin-bottom: 0; */
+    display: inline-block;
+    margin-top: 10px;
+    margin-bottom: 0;
 }
 
 .address-map {
-    /* margin-top: 20px;
-    margin-bottom: 0; */
+    display: inline-block;
+    margin-top: 20px;
+    margin-bottom: 0;
 }
 
 .address-up:focus,
@@ -226,7 +248,7 @@ body {
 
 .footer-class {
     height: 252px;
-    margin-top: 125px;
+    /* padding-top: 125px; */
     margin-bottom: 0;
 }
 
