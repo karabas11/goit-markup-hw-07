@@ -160,7 +160,8 @@ section.comand {
 }
 
 /* logo */
-.webstudio {
+.webstudio,
+.webstudio-footer {
     font-family: 'Raleway', sans-serif;
     color:var(--font-color-black);
     font-weight: 700;
@@ -168,11 +169,11 @@ section.comand {
 }
 
 .webstudio-footer {
-    font-family: 'Raleway', sans-serif;
-    color: var(--font-color-white);
-    font-weight: 700;
-    font-size: 26px;
+    color: var(--font-color-white); 
+}
 
+.ws-blue {
+    color: var(--font-color-on);
 }
 
 .webstudio:hover,
@@ -182,16 +183,13 @@ section.comand {
     font-weight: 900;
 }
 
-.ws-blue {
-    color: var(--font-color-on);
-}
+
 
 /* nav */
 .link {
     color: var(--font-color-title);
     text-decoration: none;
     font-weight: 500;
-    line-height: 1.2;
     letter-spacing: 0.02em;
 }
 
@@ -209,7 +207,6 @@ section.comand {
 .address-up {
     color: var(--font-color-man);
     font-weight: 500;
-    line-height: 1.2;
     letter-spacing: 0.02em;
 }
 
@@ -222,7 +219,7 @@ section.comand {
 .address-all {
     color: rgba(255, 255, 255, 0.6);
     display: inline-block;
-    margin-top: 10px;
+    margin-top: 9px;
     margin-bottom: 0;
 }
 
@@ -248,7 +245,8 @@ section.comand {
 
 .footer-class {
     height: 252px;
-    /* padding-top: 125px; */
+    padding-top: 60px;
+    padding-bottom: 60px;
     margin-bottom: 0;
 }
 
