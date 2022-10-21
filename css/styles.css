@@ -59,19 +59,14 @@ section.fiches {
     padding-top: 95px;
 }
 
-
 section.comand {
     background: var(--fon-comand-section);
     padding-top: 95px;
     padding-bottom: 95px;
 }
 
-.footer-class {
-    padding-top: 60px;
-    padding-bottom: 60px;
-}
-
-.address,
+.address-nav,
+.address-down,
 .nav-list,
 .advantage-list,
 .fiches-list,
@@ -90,6 +85,139 @@ section.comand {
 .address-all,
 .link-portfolio {
     text-decoration: none;
+}
+
+/* logo */
+.webstudio,
+.webstudio-footer {
+    font-family: 'Raleway', sans-serif;
+    color: var(--font-color-black);
+    font-weight: 700;
+    font-size: 26px;
+}
+
+.webstudio-footer {
+    color: var(--font-color-white);
+}
+
+.ws-blue {
+    color: var(--font-color-on);
+}
+
+.webstudio:hover,
+.webstudio:focus,
+.webstudio-footer:hover,
+.webstudio-footer:focus {
+    font-weight: 900;
+}
+
+/* nav */
+.link {
+    color: var(--font-color-title);
+    text-decoration: none;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+}
+
+.link:hover,
+.link:focus,
+.link.current {
+    color: var(--font-color-on);
+}
+
+/* Address */
+.address-down {
+    font-style: normal;
+}
+
+.address-up {
+    color: var(--font-color-man);
+    font-weight: 500;
+    letter-spacing: 0.02em;
+}
+
+.address-map,
+.address-all {
+    line-height: 2;
+    color: var(--font-color-white);
+}
+
+.address-all {
+    color: rgba(255, 255, 255, 0.6);
+    display: inline-block;
+    margin-top: 9px;
+    margin-bottom: 0;
+}
+
+.address-map {
+    display: inline-block;
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+
+.address-up:focus,
+.address-up:hover,
+.address-map:hover,
+.address-map:focus,
+.address-all:hover,
+.address-all:focus {
+    color: var(--font-color-on);
+}
+
+/* heder flex box */
+.nav-list {
+    display: flex;
+}
+
+.nav-list .item + .item {
+    margin-left: 50px;
+}
+
+
+.hero,
+.footer-class {
+    background-color: var(--fon-hero-footer);
+}
+
+.footer-class {
+    height: 252px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    margin-bottom: 0;
+}
+
+/* button */
+/* ??? разобраться по крупицам */
+.button-success {
+    margin-top: 30px;
+
+    display: inline-block;
+    border-radius: 4px;
+    border: solid 1px;
+    padding: 10px 32px;
+    min-width: 216px;
+
+    color: var(--font-color-white);
+    background-color: var(--font-color-on);
+
+    border-color: var(--font-color-on);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.9;
+    letter-spacing: 0.06em;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    font-family: inherit;
+
+    cursor: pointer;
+
+    /* align-items: center;
+    text-align: center; */
+
+}
+
+.button-success:hover,
+.button-success:focus {
+    color: var(--font-color-title);
 }
 
 /* title */
@@ -161,130 +289,7 @@ section.comand {
     line-height: 1.7;
 }
 
-/* logo */
-.webstudio,
-.webstudio-footer {
-    font-family: 'Raleway', sans-serif;
-    color:var(--font-color-black);
-    font-weight: 700;
-    font-size: 26px;
-}
 
-.webstudio-footer {
-    color: var(--font-color-white); 
-}
-
-.ws-blue {
-    color: var(--font-color-on);
-}
-
-.webstudio:hover,
-.webstudio:focus, 
-.webstudio-footer:hover,
-.webstudio-footer:focus {
-    font-weight: 900;
-}
-
-
-
-/* nav */
-.link {
-    color: var(--font-color-title);
-    text-decoration: none;
-    font-weight: 500;
-    letter-spacing: 0.02em;
-}
-
-.link:hover,
-.link:focus,
-.link.current {
-    color: var(--font-color-on);
-}
-
-/* Address */
-.address {
-    font-style: normal;
-}
-
-.address-up {
-    color: var(--font-color-man);
-    font-weight: 500;
-    letter-spacing: 0.02em;
-}
-
-.address-map,
-.address-all {
-    line-height: 2; 
-    color: var(--font-color-white);
-}
-
-.address-all {
-    color: rgba(255, 255, 255, 0.6);
-    display: inline-block;
-    margin-top: 9px;
-    margin-bottom: 0;
-}
-
-.address-map {
-    display: inline-block;
-    margin-top: 20px;
-    margin-bottom: 0;
-}
-
-.address-up:focus,
-.address-up:hover,
-.address-map:hover,
-.address-map:focus,
-.address-all:hover,
-.address-all:focus {
-    color: var(--font-color-on);
-}
-
-.hero,
-.footer-class {
-    background-color:var(--fon-hero-footer);
-}
-
-.footer-class {
-    height: 252px;
-    padding-top: 60px;
-    padding-bottom: 60px;
-    margin-bottom: 0;
-}
-
-/* button */
-/* ??? разобраться по крупицам */
-.button-success {
-    margin-top: 30px;
-
-    display: inline-block;
-    border-radius: 4px;
-    border: solid 1px;
-    padding: 10px 32px;
-    min-width: 216px;
-
-    color: var(--font-color-white);
-    background-color: var(--font-color-on);
-
-    border-color: var(--font-color-on);
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.9;
-    letter-spacing: 0.06em;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    font-family: inherit;
-
-    cursor: pointer;
-
-    /* align-items: center;
-    text-align: center; */
-
-}
-
-.button-success:hover,
-.button-success:focus {
-    color: var(--font-color-title);
-}
 
 .filter button {
     margin-top: 30px;
