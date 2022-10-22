@@ -193,6 +193,27 @@ section.comand {
     background-color: var(--fon-hero-footer);
 }
 
+/* advantage */
+.advantage-list {
+    display: flex;
+    padding-top: 95px;
+}
+
+/* fiches */
+.fiches-list {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+}
+
+/* comand */
+.comand-list {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+}
+
+
 .footer-class {
     height: 252px;
     padding-top: 60px;
