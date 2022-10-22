@@ -9,6 +9,7 @@
     --fon-hero-footer:#2F303A;
     --fon-comand-section:#F5F4FA;
     --fon-advantage-fiches-section:#F5F5F5;
+    --header-botton-line:#ECECEC;
 }   
 
 html {
@@ -35,6 +36,7 @@ body {
 
 header {
     background: var(--font-color-white);
+    outline: 1px solid var(--header-botton-line);
 }
 
 section.hero {
