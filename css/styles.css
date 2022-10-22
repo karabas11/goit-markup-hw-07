@@ -50,13 +50,13 @@ section.advantage {
 
 section.fiches {
     background: var(--fon-advantage-fiches-section);
-    padding-top: 95px;
+    padding-top: 94px;
 }
 
 section.comand {
     background: var(--fon-comand-section);
-    padding-top: 95px;
-    padding-bottom: 95px;
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 
 .address-nav,
@@ -198,7 +198,7 @@ section.comand {
 /* advantage */
 .advantage-list {
     display: flex;
-    padding-top: 95px;
+    padding-top: 94px;
 }
 
 /* fiches */
