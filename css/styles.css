@@ -15,13 +15,6 @@ html {
     box-sizing: border-box;
 }
 
-/* *,
-*::before,
-*::after {
-    box-sizing: inherit;
-} */
-
-/* add font and background*/
 body {
     font-family: 'Roboto', sans-serif;
     color: var(--font-color-man);
@@ -51,7 +44,6 @@ section.hero {
 
 section.advantage {
     background: var(--fon-advantage-fiches-section);
-    /* padding-top: 95px; */
 }
 
 section.fiches {
@@ -112,7 +104,12 @@ section.comand {
 }
 
 /* nav */
-.link {
+.link,
+.address-up {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
     color: var(--font-color-title);
     text-decoration: none;
     font-weight: 500;
@@ -132,8 +129,6 @@ section.comand {
 
 .address-up {
     color: var(--font-color-man);
-    font-weight: 500;
-    letter-spacing: 0.02em;
 }
 
 .address-map,
@@ -149,6 +144,7 @@ section.comand {
     margin-bottom: 0;
 }
 
+/* ? */
 .address-map {
     display: inline-block;
     margin-top: 20px;
@@ -167,12 +163,30 @@ section.comand {
 /* heder flex box */
 .nav-list {
     display: flex;
+    margin-left: 93px;
 }
 
 .nav-list .item + .item {
     margin-left: 50px;
 }
 
+.address-nav {
+    display: flex;
+    margin-left: auto;
+}
+
+.address-nav .item + .item {
+    margin-left: 50px;
+}
+
+.nav-main {
+    display: flex;
+    align-items: center;
+}
+
+/* .nav-list .item:not(:last-child) {
+    margin-right: 50px;
+} */
 
 .hero,
 .footer-class {
