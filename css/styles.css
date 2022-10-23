@@ -219,10 +219,9 @@ section.comand {
 /* comand */
 .comand-list {
     display: flex;
+    padding-top: 50px;
     /* flex-wrap: wrap; */
     justify-content: space-between;
-    padding-top: 50px;
-
 }
 
 .comand-card {
@@ -349,12 +348,6 @@ section.comand {
     margin-top: 0;
     margin-bottom: 0;
 }
-
-/* .fiches-list,
-.comand-list {
-    margin-top: 50px;
-    margin-bottom: 0;
-} */
 
 .advantage-title {
     margin: 0px;
