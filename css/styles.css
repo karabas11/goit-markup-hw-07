@@ -238,27 +238,9 @@ section.comand {
     height: auto;
 }
 
-/* .card-portfolio {
-    display: flex;
-    width: 370px;
-    margin-top: 0;
-    margin-bottom: 30px;
-    margin-right: auto;
-    margin-left: auto;
-        
-    background: #FFFFFF;     
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 0px 0px 4px 4px;
-
-    background: #FFFFFF;
-    border: 1px solid #EEEEEE;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-
-.img-example {
-        display: block;
-        max-width: 100%;
-        height: auto;
-    } */
+.profession {
+    padding-bottom: 30px;
+}
 
 .footer-class {
     height: 252px;
@@ -447,10 +429,13 @@ section.comand {
     letter-spacing: 0.06em;
 
     text-align: left;
+    margin-left: 24px;
 }
 
 .text-portfolio {
     color: var(--font-color-man);
     font-size: 16px;
-    line-height: 1.9;  
+    line-height: 1.9;
+    margin-left: 24px;
+    margin-bottom: 20px;
 }
