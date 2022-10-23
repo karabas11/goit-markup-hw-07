@@ -44,6 +44,13 @@ section.hero {
     padding-bottom: 200px;
 }
 
+/* hide it */
+.hide-it {
+    margin-top: 0;
+    margin-bottom: 0;
+    color: var(--fon-advantage-fiches-section);
+}
+
 section.advantage {
     background: var(--fon-advantage-fiches-section);
 }
@@ -198,7 +205,8 @@ section.comand {
 /* advantage */
 .advantage-list {
     display: flex;
-    padding-top: 94px;
+    padding-top: 69px;
+    /* +25 занимает заголовок h2 "Студія" */
 }
 
 /* fiches */
@@ -258,8 +266,7 @@ section.comand {
 }
 
 /* title */
-.first-title,
-.portfolio-first-title {
+.first-title {
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
@@ -326,12 +333,27 @@ section.comand {
     line-height: 1.7;
 }
 
+/* portfolio.html */
+.portfolio {
+    background: var(--fon-advantage-fiches-section);
+    padding-top: 69px;
+    /* +25 занимает заголовок h1 "Приклади робіт" */
+}
+.filter-list {
+    display: flex;
+    margin-top: 0;
+    margin-bottom: 0;
+    justify-content:center;
+}
 
+.filter-list .filter-item + .filter-item {
+    margin-left: 8px;
+}
 
 .filter button {
-    margin-top: 30px;
+    /* margin-top: 30px; */
     
-    display: inline-block;
+    display: block;
     border-radius: 4px;
     border: solid 1px;
     padding: 6px 25px;
@@ -358,6 +380,10 @@ section.comand {
 .filter button:focus {
     color: var(--font-color-white);
     background-color: var(--font-color-on);
+}
+
+.work-examples-list {
+
 }
 
 .img-example {
