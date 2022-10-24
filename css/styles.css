@@ -25,6 +25,10 @@ body {
     /* background: #F5F5F5 */
 }
 
+img {
+    display: block;
+}
+
 .container {
     margin-right: auto;
     margin-left: auto;
@@ -39,16 +43,22 @@ header {
     outline: 1px solid var(--header-botton-line);
 }
 
+section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
 section.hero {
-    padding-top: 200px;
-    padding-bottom: 200px;
+
 }
 
 /* hide it */
 .hide-it {
-    margin-top: 0;
+    visibility: hidden;
+    pointer-events: none;
+    position: absolute;
+    /* margin-top: 0;
     margin-bottom: 0;
-    color: var(--fon-advantage-fiches-section);
+    color: var(--fon-advantage-fiches-section); */
 }
 
 section.advantage {
@@ -56,14 +66,12 @@ section.advantage {
 }
 
 section.fiches {
+    padding-top: 0;
     background: var(--fon-advantage-fiches-section);
-    padding-top: 94px;
 }
 
 section.comand {
     background: var(--fon-comand-section);
-    padding-top: 94px;
-    padding-bottom: 94px;
 }
 
 .address-nav,
@@ -197,16 +205,13 @@ section.comand {
     margin-right: 50px;
 } */
 
-.hero,
-.footer-class {
+.hero {
     background-color: var(--fon-hero-footer);
 }
 
 /* advantage */
 .advantage-list {
     display: flex;
-    padding-top: 69px;
-    /* +25 занимает заголовок h2 "Студія" */
 }
 
 /* fiches */
@@ -243,6 +248,7 @@ section.comand {
 }
 
 .footer-class {
+    background-color: var(--fon-hero-footer);
     height: 252px;
     padding-top: 60px;
     padding-bottom: 60px;
@@ -285,6 +291,8 @@ section.comand {
 
 /* title */
 .first-title {
+    width: 696px;
+    
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
@@ -294,6 +302,8 @@ section.comand {
     color:var(--font-color-white);
     margin-top: 0px;
     margin-bottom: 0px;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .hero {
@@ -334,6 +344,7 @@ section.comand {
 .advantage-title {
     margin: 0px;
     color: var(--font-color-title);
+    font-style: 14px;
     font-weight: 700;
     line-height: 1.15;
     text-transform: uppercase;
@@ -348,8 +359,6 @@ section.comand {
 /* portfolio.html */
 .portfolio {
     background: var(--fon-advantage-fiches-section);
-    padding-top: 69px;
-    /* +25 занимает заголовок h1 "Приклади робіт" */
 }
 .filter-list {
     display: flex;
