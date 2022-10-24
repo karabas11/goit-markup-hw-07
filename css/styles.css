@@ -22,11 +22,12 @@ body {
     font-size: 14px;
     line-height: 1.2;
     letter-spacing: 0.03em;
-    /* background: #F5F5F5 */
 }
 
 img {
     display: block;
+    max-width: 100%;
+    height: auto;
 }
 
 .container {
@@ -47,9 +48,9 @@ section {
     padding-top: 94px;
     padding-bottom: 94px;
 }
-section.hero {
+/* section.hero {
 
-}
+} */
 
 /* hide it */
 .hide-it {
@@ -142,6 +143,7 @@ section.comand {
 /* Address */
 .address-down {
     font-style: normal;
+    margin-top: 20px;
 }
 
 .address-up {
@@ -164,7 +166,7 @@ section.comand {
 /* ? */
 .address-map {
     display: inline-block;
-    margin-top: 20px;
+    /* margin-top: 20px; */
     margin-bottom: 0;
 }
 
@@ -207,6 +209,7 @@ section.comand {
 
 .hero {
     background-color: var(--fon-hero-footer);
+    text-align: center;
 }
 
 /* advantage */
@@ -229,6 +232,11 @@ section.comand {
     justify-content: space-between;
 }
 
+.team-signature {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
 .comand-card {
     display: block;
     width: 270px;
@@ -237,19 +245,9 @@ section.comand {
     border-radius: 0px 0px 4px 4px;
 }
 
-.img-name {
-    display: block;
-    max-width: 100%;
-    height: auto;
-}
-
-.profession {
-    padding-bottom: 30px;
-}
 
 .footer-class {
     background-color: var(--fon-hero-footer);
-    height: 252px;
     padding-top: 60px;
     padding-bottom: 60px;
     margin-bottom: 0;
@@ -306,17 +304,13 @@ section.comand {
     margin-left: auto;
 }
 
-.hero {
-    text-align: center;
-}
-
 .name {
     color: var(--font-color-title);
     font-weight: 500;
     font-size: 16px;
     text-align: center;
 
-    margin-top: 30px;
+    margin-top: 0px;
     margin-bottom: 0px;
 }
 
@@ -324,7 +318,7 @@ section.comand {
     font-size: 16px;
     text-align: center;
 
-    margin-top: 10px;
+    /* margin-top: 10px; */
     margin-bottom: 0px;
 }
 
@@ -360,6 +354,7 @@ section.comand {
 .portfolio {
     background: var(--fon-advantage-fiches-section);
 }
+
 .filter-list {
     display: flex;
     margin-top: 0;
@@ -372,9 +367,8 @@ section.comand {
     margin-left: 8px;
 }
 
-.filter button {
+.filter-button {
     /* margin-top: 30px; */
-    
     display: block;
     border-radius: 4px;
     border: solid 1px;
@@ -394,30 +388,26 @@ section.comand {
 
     text-align: center;
 
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
+    
 }
 
-.filter button:hover,
-.filter button:focus {
+.filter-button:hover,
+.filter-button:focus {
     color: var(--font-color-white);
     background-color: var(--font-color-on);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .work-examples-list {
     display: flex;
     flex-wrap: wrap;
-    
+    gap: 30px;
 }
 
 .card-portfolio {
-    display: flex;
+    display: block;
     width: 370px;
-    margin-top: 0;
-    margin-bottom: 30px;
-    margin-right: auto;
-    margin-left: auto;
-
     background: #FFFFFF;
     border: 1px solid #EEEEEE;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -438,13 +428,27 @@ section.comand {
     letter-spacing: 0.06em;
 
     text-align: left;
-    margin-left: 24px;
+    margin-top: 0;
 }
 
 .text-portfolio {
     color: var(--font-color-man);
     font-size: 16px;
     line-height: 1.9;
-    margin-left: 24px;
-    margin-bottom: 20px;
+    margin-bottom: 0;
+}
+.portfolio-single {
+    padding-top: 20px;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-bottom: 20px;
+
+}
+
+
+.one {
+    background: var(--fon-advantage-fiches-section);
+}
+.two {
+    background: var(--font-color-button);
 }
