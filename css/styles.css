@@ -4,13 +4,10 @@
   --font-color-title: #212121;
   --font-color-on: #2196f3;
   --border-color: #ececec;
-  --font-color-white: #ffffff;
-  --font-color-button: #f5f4fa;
+  --color-white: #ffffff;
   --font-color-black: #000000;
   --fon-hero-footer: #2f303a;
-  --fon-comand-section: #f5f4fa;
-  --fon-advantage-fiches-section: #f5f5f5;
-  --header-botton-line: #ececec;
+  --color-grey: #f5f4fa;
 }
 
 html {
@@ -41,39 +38,33 @@ img {
 }
 
 header {
-  background: var(--font-color-white);
-  outline: 1px solid var(--header-botton-line);
+  background: var(--color-white);
+  outline: 1px solid var(--border-color);
 }
-
-section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-/* section.hero {
-
-} */
 
 /* hide it */
 .hide-it {
   visibility: hidden;
   pointer-events: none;
   position: absolute;
-  /* margin-top: 0;
-    margin-bottom: 0;
-    color: var(--fon-advantage-fiches-section); */
 }
 
 section.advantage {
-  background: var(--fon-advantage-fiches-section);
+  background: var(--color-white);
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 section.fiches {
   padding-top: 0;
-  background: var(--fon-advantage-fiches-section);
+  padding-bottom: 94px;
+  background: var(--color-white);
 }
 
 section.comand {
-  background: var(--fon-comand-section);
+  background: var(--color-grey);
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .address-nav,
@@ -93,8 +84,7 @@ section.comand {
 .webstudio-footer,
 .address-up,
 .address-map,
-.address-all,
-.link-portfolio {
+.address-all {
   text-decoration: none;
 }
 
@@ -154,7 +144,7 @@ section.comand {
 .address-map,
 .address-all {
   line-height: 2;
-  color: var(--font-color-white);
+  color: var(--color-white);
 }
 
 .address-all {
@@ -208,9 +198,11 @@ section.comand {
     margin-right: 50px;
 } */
 
-.hero {
+section.hero {
   background-color: var(--fon-hero-footer);
   text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 /* advantage */
@@ -222,13 +214,13 @@ section.comand {
 .fiches-list {
   display: flex;
   justify-content: space-between;
-  padding-top: 50px;
+  margin-top: 50px;
 }
 
 /* comand */
 .comand-list {
   display: flex;
-  padding-top: 50px;
+  margin-top: 50px;
   /* flex-wrap: wrap; */
   justify-content: space-between;
 }
@@ -241,7 +233,7 @@ section.comand {
 .comand-card {
   display: block;
   width: 270px;
-  background: #ffffff;
+  background: var(--color-white);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
@@ -265,7 +257,7 @@ section.comand {
   padding: 10px 32px;
   min-width: 216px;
 
-  color: var(--font-color-white);
+  color: var(--color-white);
   background-color: var(--font-color-on);
 
   border-color: var(--font-color-on);
@@ -297,7 +289,7 @@ section.comand {
 
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: var(--font-color-white);
+  color: var(--color-white);
   margin-top: 0px;
   margin-bottom: 0px;
   margin-right: auto;
@@ -318,7 +310,6 @@ section.comand {
   font-size: 16px;
   text-align: center;
 
-  /* margin-top: 10px; */
   margin-bottom: 0px;
 }
 
@@ -338,7 +329,7 @@ section.comand {
 .advantage-title {
   margin: 0px;
   color: var(--font-color-title);
-  font-style: 14px;
+  font-size: 14px;
   font-weight: 700;
   line-height: 1.15;
   text-transform: uppercase;
@@ -351,8 +342,10 @@ section.comand {
 }
 
 /* portfolio.html */
-.portfolio {
-  background: var(--fon-advantage-fiches-section);
+section.portfolio {
+  background: var(--color-white);
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .filter-list {
@@ -376,8 +369,8 @@ section.comand {
   min-width: 73px;
 
   color: var(--font-color-title);
-  background-color: var(--font-color-button);
-  border-color: var(--font-color-button);
+  background-color: var(--color-grey);
+  border-color: var(--color-grey);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.6;
@@ -391,7 +384,7 @@ section.comand {
 
 .filter-button:hover,
 .filter-button:focus {
-  color: var(--font-color-white);
+  color: var(--color-white);
   background-color: var(--font-color-on);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -404,12 +397,20 @@ section.comand {
 }
 
 .card-portfolio {
-  display: block;
   width: 370px;
-  background: #ffffff;
+}
+
+.link-portfolio {
+  text-decoration: none;
+}
+
+.link-portfolio:hover,
+.link-portfolio:focus {
+  display: block;
   border: 1px solid #eeeeee;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
+
 
 .title-portfolio {
   color: var(--font-color-title);
@@ -420,12 +421,14 @@ section.comand {
 
   text-align: left;
   margin-top: 0;
+  margin-bottom: 4px;
 }
 
 .text-portfolio {
   color: var(--font-color-man);
   font-size: 16px;
   line-height: 1.9;
+  margin-top: 0;
   margin-bottom: 0;
 }
 .portfolio-single {
@@ -435,9 +438,3 @@ section.comand {
   padding-bottom: 20px;
 }
 
-.one {
-  background: var(--fon-advantage-fiches-section);
-}
-.two {
-  background: var(--font-color-button);
-}
