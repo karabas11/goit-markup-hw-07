@@ -98,7 +98,8 @@ section.comand {
 }
 
 .webstudio-footer {
-  color: var(--font-color-white);
+  color: var(--color-white);
+  margin-bottom: 20px;
 }
 
 .ws-blue {
@@ -143,7 +144,7 @@ section.comand {
 
 .address-map,
 .address-all {
-  line-height: 2;
+  line-height: 1.7;
   color: var(--color-white);
 }
 
@@ -157,7 +158,6 @@ section.comand {
 /* ? */
 .address-map {
   display: inline-block;
-  /* margin-top: 20px; */
   margin-bottom: 0;
 }
 
@@ -208,6 +208,7 @@ section.hero {
 /* advantage */
 .advantage-list {
   display: flex;
+  gap: 30px;
 }
 
 /* fiches */
