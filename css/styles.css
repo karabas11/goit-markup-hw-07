@@ -242,8 +242,8 @@ section.hero {
   background-size: cover;
 
   background-color: var(--fon-hero-footer);
-  
 
+  /* drop-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); */
 }
 
 /* title hero*/
