@@ -39,9 +39,11 @@ img {
 .nav-list,
 .advantage-list,
 .fiches-list,
-.comand-list,
+.command-list,
 .filter-list,
-.work-examples-list {
+.work-examples-list,
+.social-list-item,
+.social-list {
   list-style-type: none;
   padding: 0px;
   margin: 0px;
@@ -52,7 +54,8 @@ img {
 .address-up,
 .address-map,
 .address-all,
-.link-portfolio {
+.link-portfolio,
+.social-list-link {
   text-decoration: none;
 }
 
@@ -126,13 +129,15 @@ header {
 
 /* Address */
 .address-up {
+  display: flex;
   color: var(--font-color-man);
+  padding-left: 10px;
 }
 
 .icon-envelope {
-  display: inline-block;
-  color: var(--font-color-man);
-  margin-right: 10px;
+  display: flex;
+  fill: var(--font-color-man);
+  padding-right: 10px;
 }
 
 .icon-smartphone {
@@ -380,7 +385,7 @@ section.fiches {
 }
 
 .fiches-title,
-.comand-title {
+.command-title {
   color: var(--font-color-title);
   font-weight: 700;
   font-size: 36px;
@@ -391,21 +396,21 @@ section.fiches {
   margin-bottom: 0;
 }
 
-/* section comand */
-section.comand {
+/* section command */
+section.command {
   background: var(--color-grey);
   padding-top: 94px;
   padding-bottom: 94px;
 }
 
-.comand-list {
+.command-list {
   display: flex;
   margin-top: 50px;
   /* flex-wrap: wrap; */
   justify-content: space-between;
 }
 
-.comand-card {
+.command-card {
   display: flex;
   flex-direction: column;
   background: var(--color-white);
@@ -414,13 +419,18 @@ section.comand {
   border-radius: 0px 0px 4px 4px;
 }
 
+.command-sign {
+  display: flex;
+  flex-direction: column;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
 .name {
   color: var(--font-color-title);
   font-weight: 500;
   font-size: 16px;
   text-align: center;
-
-  padding-top: 30px;
   margin-top: 0px;
   margin-bottom: 0px;
 }
@@ -428,10 +438,47 @@ section.comand {
 .profession {
   font-size: 16px;
   text-align: center;
-
-  padding-bottom: 30px;
-  margin-bottom: 0px;
+  margin-bottom: 16px;
 }
+
+.social-list {
+  display: flex;
+  justify-content: space-between;
+  width: 206px;
+  margin-right: auto;
+  margin-left: auto;
+  
+}
+
+.social-list-link {
+  background: var(--color-white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+
+}
+
+.social-list-link:hover,
+.social-list-link:focus {
+  background: var(--font-color-on);
+}
+
+.social-list-ikon {
+  fill:var(--font-color-man);
+  width: 20px;
+  height: 20px;
+}
+
+.social-list-ikon:hover,
+.social-list-ikon:focus {
+  fill:var(--color-white)
+}
+
+
+
 
 
 /* section portfolio.html */
