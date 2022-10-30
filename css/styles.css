@@ -6,7 +6,8 @@
   --border-color: #ececec;
   --color-white: #ffffff;
   --font-color-black: #000000;
-  --fon-hero-footer: #2f303a;
+  --fon-footer: #2f303a;
+  --backup-hero: #c4c4c4;
   --color-grey: #f5f4fa;
 }
 
@@ -72,7 +73,7 @@ header {
 }
 
 .footer-class {
-  background-color: var(--fon-hero-footer);
+  background-color: var(--fon-footer);
   padding-top: 60px;
   padding-bottom: 60px;
   margin-bottom: 0;
@@ -129,12 +130,13 @@ header {
 }
 
 .icon-envelope {
+  display: inline-block;
   color: var(--font-color-man);
   margin-right: 10px;
 }
 
 .icon-smartphone {
-  /* background-color: var(--font-color-man); */
+  color: var(--font-color-man);
   margin-right: 10px;
 }
 
@@ -241,11 +243,10 @@ section.hero {
     url(../img/hero.jpg
     );
   /* filter: drop-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); */
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; 
   background-position: center;
   background-size: cover;
-
-  background-color: var(--fon-hero-footer);
+  background-color: var(--backup-hero);
 
   /* drop-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); */
 }
