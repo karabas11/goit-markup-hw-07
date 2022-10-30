@@ -10,10 +10,6 @@
   --color-grey: #f5f4fa;
 }
 
-html {
-  box-sizing: border-box;
-}
-
 body {
   font-family: "Roboto", sans-serif;
   color: var(--font-color-man);
@@ -70,7 +66,6 @@ img {
 
 /* SECTIONS */
 /* header and footer */
-
 header {
   background: var(--color-white);
   outline: 1px solid var(--border-color);
@@ -118,6 +113,7 @@ header {
   color: var(--font-color-title);
   text-decoration: none;
   font-weight: 500;
+  line-height: 1.14;
   letter-spacing: 0.02em;
 }
 
@@ -130,13 +126,11 @@ header {
 /* Address */
 .address-up {
   color: var(--font-color-man);
-  padding-top: 32px;
-  padding-bottom: 32px;
 }
 
-.phone-up {
+/* .phone-up {
 
-}
+} */
 
 .email-up::before {
   display: inline-flex;
@@ -144,7 +138,7 @@ header {
   height: 12px;
   margin-right: 10px;
   content: "";
-  background-image: url("../img/envelope.svg");
+  background-image: url("../img/envelope_n.svg");
 }
 
 .phone-up::before {
@@ -236,7 +230,7 @@ section.hero {
     rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), 
     url(../img/hero.jpg
     );
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  /* filter: drop-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); */
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
