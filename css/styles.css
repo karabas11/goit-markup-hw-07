@@ -381,7 +381,6 @@ section.fiches {
 }
 
 /* section comand */
-
 section.comand {
   background: var(--color-grey);
   padding-top: 94px;
@@ -395,13 +394,9 @@ section.comand {
   justify-content: space-between;
 }
 
-.team-signature {
-  padding-top: 30px;
-  padding-bottom: 30px;
-}
-
 .comand-card {
-  display: block;
+  display: flex;
+  flex-direction: column;
   width: 270px;
   background: var(--color-white);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -415,6 +410,7 @@ section.comand {
   font-size: 16px;
   text-align: center;
 
+  padding-top: 30px;
   margin-top: 0px;
   margin-bottom: 0px;
 }
@@ -423,6 +419,7 @@ section.comand {
   font-size: 16px;
   text-align: center;
 
+  padding-bottom: 30px;
   margin-bottom: 0px;
 }
 
@@ -447,7 +444,7 @@ section.portfolio {
 }
 
 .filter-button {
-  display: block;
+  display: flex;
   border-radius: 4px;
   border: solid 1px;
   padding: 6px 25px;
