@@ -25,6 +25,10 @@ img {
   height: auto;
 }
 
+address {
+  font-style: normal;
+}
+
 .container {
   margin-right: auto;
   margin-left: auto;
@@ -48,6 +52,7 @@ img {
   padding: 0px;
   margin: 0px;
 }
+
 
 .webstudio,
 .webstudio-footer,
