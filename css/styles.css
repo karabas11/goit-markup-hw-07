@@ -9,6 +9,7 @@
   --fon-footer: #2f303a;
   --backup-hero: #c4c4c4;
   --color-grey: #f5f4fa;
+  --color-icon: #AFB1B8;
 }
 
 body {
@@ -53,7 +54,8 @@ address {
 .filter-list,
 .work-examples-list,
 .social-list-item,
-.social-list {
+.social-list,
+.regular-clients-list-item {
   list-style-type: none;
   padding: 0px;
   margin: 0px;
@@ -249,12 +251,12 @@ header {
   background: var(--font-color-on);
 }
 
-.social-list-ikon.down {
+.social-list-icon.down {
   fill:var(--color-white);
 }
 
-.social-list-ikon.down:hover  {
-  fill:var(--font-color-man)
+.social-list-icon.down:hover  {
+  fill:var(--color-icon)
 }
 
 
@@ -491,13 +493,13 @@ section.command {
   background: var(--font-color-on);
 }
 
-.social-list-ikon {
-  fill:var(--font-color-man);
+.social-list-icon {
+  fill:var(--color-icon);
   width: 20px;
   height: 20px;
 }
 
-.social-list-ikon:hover {
+.social-list-icon:hover {
   fill:var(--color-white)
 }
 
@@ -507,6 +509,42 @@ section.regular-clients {
   padding-top: 94px;
   padding-bottom: 94px;
 }
+
+
+
+.regular-clients-list-link {
+  display: flex;
+  width: 170px;
+  height: 92px;
+  /* left: 215px; */
+
+  border: 1px solid var(--color-icon);
+  border-radius: 4px;
+  
+}
+
+.regular-clients-list-icon {
+  display: flex;
+  fill: var(--color-icon);
+
+/* align-items:center;
+justify-content:center; */
+  /* margin: auto auto;
+  text-align: center; */
+  /* margin-top: 23px;
+  margin-left: auto;
+  margin-right: auto; */
+}
+
+.regular-clients-list-link:hover,
+.regular-clients-list-link:focus {
+  border-color: var(--font-color-on);
+}
+
+.regular-clients-list-icon:hover {
+  fill: var(--font-color-on);
+}
+
 
 /* section portfolio.html */
 section.portfolio {
