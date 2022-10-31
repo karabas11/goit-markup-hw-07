@@ -25,6 +25,12 @@ img {
   height: auto;
 }
 
+/* svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+} */
+
 address {
   font-style: normal;
 }
@@ -87,6 +93,10 @@ header {
   margin-bottom: 0;
 }
 
+.container-footer {
+  display: flex;
+}
+
 /* logo */
 .webstudio,
 .webstudio-footer {
@@ -140,39 +150,17 @@ header {
 }
 
 .icon-envelope {
-  display: flex;
+  display: inline-block;
   fill: var(--font-color-man);
-  padding-right: 10px;
+  width: 16px;
+  height: 12px;
 }
 
 .icon-smartphone {
-  color: var(--font-color-man);
-  margin-right: 10px;
-}
-
-/* .phone-up {
-
-} */
-
-/* .email-up::before {
-  display: inline-flex;
-  width: 16px;
-  height: 12px;
-  margin-right: 10px;
-  content: "";
-  background-image: url("../img/envelope_n.svg");
-}
-
-.phone-up::before {
-  display: inline-flex;
+  fill: var(--font-color-man);
   width: 10px;
   height: 16px;
-  /* background-repeat: no-repeat; */
-  /* background-position: left bottom; */
-/*  margin-right: 10px;
-  content: "";
-  background-image: url("../img/smartphone.svg");
-} */
+}
 
 .address-map,
 .address-all {
@@ -235,6 +223,39 @@ header {
 /* .nav-list .item:not(:last-child) {
     margin-right: 50px;
 } */
+
+.join {
+  width: 206px;
+  margin-top: 10px;
+  margin-left: 70px;
+}
+
+.join-title {
+  margin-top: 0px;
+  margin-bottom: 20px;
+  color: var(--color-white);
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.15;
+  text-transform: uppercase;
+}
+
+.social-list-link.down {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.social-list-link:hover,
+.social-list-link:focus {
+  background: var(--font-color-on);
+}
+
+.social-list-ikon.down {
+  fill:var(--color-white);
+}
+
+.social-list-ikon.down:hover  {
+  fill:var(--font-color-man)
+}
 
 
 /* section hero */
@@ -388,7 +409,8 @@ section.fiches {
 }
 
 .fiches-title,
-.command-title {
+.command-title,
+.regular-clients-title {
   color: var(--font-color-title);
   font-weight: 700;
   font-size: 36px;
@@ -475,14 +497,16 @@ section.command {
   height: 20px;
 }
 
-.social-list-ikon:hover,
-.social-list-ikon:focus {
+.social-list-ikon:hover {
   fill:var(--color-white)
 }
 
-
-
-
+/* section regular-clients */
+section.regular-clients {
+  background: var(--color-white);
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 
 /* section portfolio.html */
 section.portfolio {
