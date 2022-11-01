@@ -572,6 +572,8 @@ section.regular-clients {
   fill: var(--color-icon);
   margin-bottom: 0;
   justify-content: space-between;
+
+
   /* align-items: center; */
   /* margin: auto auto;
   text-align: center; */
@@ -580,6 +582,14 @@ section.regular-clients {
   margin-right: auto; */
 }
 
+/* .regular-clients-list-link > svg {
+  display: block;
+  height: 100%;
+  width: 100%;
+
+  object-fit: cover;
+  object-position: position;
+} */
 /* .icon-client {
 
 } */
