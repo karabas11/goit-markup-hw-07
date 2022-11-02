@@ -29,6 +29,7 @@ ul {
 
 a {
   text-decoration: none;
+  color: #000000;
 }
 
 body {
@@ -108,6 +109,7 @@ header {
 
 .container-footer {
   display: flex;
+  align-items: center;
 }
 
 /* logo */
@@ -237,10 +239,11 @@ header {
 /* .nav-list .item:not(:last-child) {
     margin-right: 50px;
 } */
+.address-down {
+  margin-top: 20px;
+}
 
 .join {
-  width: 206px;
-  margin-top: 10px;
   margin-left: 70px;
 }
 
@@ -470,7 +473,7 @@ section.command {
   font-size: 16px;
   text-align: center;
   margin-top: 0px;
-  margin-bottom: 0px;
+  margin-bottom: 10px;
 }
 
 .profession {
@@ -500,6 +503,7 @@ section.command {
 .social-list-link:hover,
 .social-list-link:focus {
   background: var(--font-color-on);
+  fill: var(--color-white);
 }
 
 .social-list-icon {
@@ -644,13 +648,17 @@ section.portfolio {
 }
 
 .card-portfolio {
+  display: block;
   width: 370px;
+}
+
+.link-portfolio {
+  display: block;
+  /* border: 1px solid #eeeeee; */
 }
 
 .link-portfolio:hover,
 .link-portfolio:focus {
-  display: block;
-  border: 1px solid #eeeeee;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
