@@ -45,12 +45,6 @@ img {
   height: auto;
 }
 
-/* svg {
-  display: block;
-  max-width: 100%;
-  height: auto;
-} */
-
 address {
   font-style: normal;
 }
@@ -157,11 +151,8 @@ header {
 
 .link:hover,
 .link:focus,
-.link.current,
-.icon-envelope:hover,
-.icon-smartphone:hover {
+.link.current {
   color: var(--font-color-on);
-  fill: var(--font-color-on);
 }
 
 /* Address */
@@ -173,14 +164,14 @@ header {
 
 .icon-envelope {
   display: inline-block;
-  fill: var(--font-color-man);
+  fill: currentColor;
   width: 16px;
   height: 12px;
   margin-right: 10px;
 }
 
 .icon-smartphone {
-  fill: var(--font-color-man);
+  fill: currentColor;
   width: 10px;
   height: 16px;
   margin-right: 10px;
