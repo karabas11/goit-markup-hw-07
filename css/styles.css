@@ -126,7 +126,7 @@ header {
   margin-bottom: 20px;
 }
 
-.ws-blue {
+.webstudio-blue {
   color: var(--font-color-on);
 }
 
@@ -164,18 +164,27 @@ header {
   padding-left: 10px;
 }
 
-.icon-envelope {
-  display: inline-block;
-  fill: currentColor;
+.item .item-envelope {
   width: 16px;
   height: 12px;
+}
+
+.icon-envelope {
+  fill: currentColor;
+  width: 100%;
+  height: 100%;
   margin-right: 10px;
+}
+
+.item .item-smartphone {
+  width: 10px;
+  height: 16px;  
 }
 
 .icon-smartphone {
   fill: currentColor;
-  width: 10px;
-  height: 16px;
+ /* width: 100%; */
+  height: 100%;
   margin-right: 10px;
 }
 
@@ -216,6 +225,10 @@ header {
   margin-left: 50px;
 }
 
+/* .nav-list .item:not(:last-child) {
+    margin-right: 50px;
+} */
+
 .address-nav {
   display: flex;
   margin-left: auto;
@@ -227,8 +240,12 @@ header {
   align-items: center;
 } */
 
-.address-nav .item + .item {
+/* .address-nav .item + .item {
   margin-left: 50px;
+} */
+
+.address-nav .item:not(:last-child) {
+  margin-right: 50px;
 }
 
 .nav-main {
@@ -236,9 +253,6 @@ header {
   align-items: center;
 }
 
-/* .nav-list .item:not(:last-child) {
-    margin-right: 50px;
-} */
 .address-down {
   margin-top: 20px;
 }
@@ -262,8 +276,8 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 44px;
-  height: 44px;
+  width: 100%;
+  height: 100%;
   border-radius: 50%;
   fill: var(--color-white);
 }
@@ -271,7 +285,7 @@ header {
 .social-list-link-down:hover,
 .social-list-link-down:focus {
   background: var(--font-color-on);
-  fill: var(--color-icon);
+  /* fill: var(--color-icon); */
 }
 
 /* section hero */
@@ -379,8 +393,6 @@ section.advantage {
   border-radius: 4px;
 }
 
-
-
 .advantage-text {
   margin-top: 10px;
   margin-bottom: 0px;
@@ -467,13 +479,18 @@ section.command {
   margin-left: auto;
 }
 
+.social-list-item {
+  width: 44px;
+  height: 44px;
+}
+
 .social-list-link {
   background: var(--color-white);
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 44px;
-  height: 44px;
+  width: 100%;
+  height: 100%;
   border-radius: 50%;
   fill: var(--color-icon);
 }
@@ -502,10 +519,15 @@ section.regular-clients {
   justify-content: space-between;
 }
 
+.regular-clients-list-item {
+  width: 170px;
+  height: 92px;  
+}
+
 .regular-clients-list-link {
   display: flex;
-  width: 170px;
-  height: 92px;
+  width: 100%;
+  height: 100%;
   border: 1px solid var(--color-icon);
   border-radius: 4px;
   justify-content: center;
