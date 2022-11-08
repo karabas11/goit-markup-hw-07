@@ -164,27 +164,17 @@ header {
   padding-left: 10px;
 }
 
-.item .item-envelope {
-  width: 16px;
-  height: 12px;
-}
-
 .icon-envelope {
   fill: currentColor;
-  width: 100%;
-  height: 100%;
+  width: 16px;
+  height: 12px;
   margin-right: 10px;
-}
-
-.item .item-smartphone {
-  width: 10px;
-  height: 16px;  
 }
 
 .icon-smartphone {
   fill: currentColor;
- /* width: 100%; */
-  height: 100%;
+  width: 10px;
+  height: 16px;
   margin-right: 10px;
 }
 
