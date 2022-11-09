@@ -29,7 +29,7 @@ ul {
 
 a {
   text-decoration: none;
-  color: #000000;
+  color: var(--font-color-black);
 }
 
 body {
@@ -98,6 +98,11 @@ address {
 header {
   background: var(--color-white);
   outline: 1px solid var(--border-color);
+}
+
+.nav-main {
+  display: flex;
+  align-items: center;
 }
 
 .footer-class {
@@ -236,11 +241,6 @@ header {
 
 .address-nav .item:not(:last-child) {
   margin-right: 50px;
-}
-
-.nav-main {
-  display: flex;
-  align-items: center;
 }
 
 .address-down {
