@@ -7,6 +7,7 @@
   --color-white: #ffffff;
   --font-color-black: #000000;
   --fon-footer: #2f303a;
+  /* --fon-footer: rgba 2f303a; */
   --backup-hero: #c4c4c4;
   --color-grey: #f5f4fa;
   --color-icon: #afb1b8;
@@ -414,6 +415,28 @@ section.fiches {
 
   margin-top: 0;
   margin-bottom: 0;
+}
+
+.fiches-img {
+  position: relative;  
+}
+
+.fiches-element {
+  position: absolute;
+  height: 70px;
+  width: 370px;
+  bottom: 0;
+  right: 0;
+
+  color: var(--color-white);
+  font-weight: 700;
+  line-height: 1.14;
+  text-align: center;
+  padding-top: 27px;
+  text-transform: uppercase;
+  
+  
+  background-color: rgba(47,48,58,0.8);
 }
 
 /* section command */
