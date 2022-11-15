@@ -1,3 +1,7 @@
+#MyTemp
+TZ.txt
+temp.txt
+
 # VSCode
 .vscode/*
 !.vscode/settings.json
