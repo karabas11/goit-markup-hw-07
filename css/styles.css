@@ -727,14 +727,19 @@ section.portfolio {
   line-height: 1.55;
 
   background-color: rgba(33, 150, 243, 0.9);
+
+  display: none;
+
+
+  /* transition: transform .3s cubic-bezier(.2,0,.2,1); */
   
   /* transition: opacity linear; */
 }
 
-.overlay-card-portfolio.is-hidden {
-  opacity: 0;
+/* .overlay-card-portfolio.is-hidden {
+  opacity: 1;
   pointer-events: none;
-}
+} */
 
 /* .overlay-card-portfolio:hover {
     opacity: 1;
@@ -752,6 +757,10 @@ section.portfolio {
 
   transition: background-color 5000ms cubic-bezier(0.4, 0, 0.2, 1);
 } */
+
+.link-portfolio:hover .overlay-card-portfolio {
+  display: block;
+}
 
 .link-portfolio:hover,
 .link-portfolio:focus {
