@@ -281,7 +281,7 @@ header {
 } */
 
 .address-nav .item:not(:last-child) {
-  margin-right: 50px;
+  margin-right: 30px;
 }
 
 .address-down {
@@ -413,10 +413,17 @@ section.hero {
   /* , visibility  500ms cubic-bezier(0.4, 0, 0.2, 1) */
 }
 
+.button-success:hover .backdrop-her,
+.button-success:focus .backdrop-her {
+
+}
+
 .backdrop-hero.is-hidden {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
+
+  /* transition: opacity 5000ms cubic-bezier(0.4, 0, 0.2, 1); */
 }
 
 .modal {
@@ -429,6 +436,8 @@ section.hero {
   height: 581px;
  
   background-color: var(--color-white);
+
+  /* transform: background-color 5000ms cubic-bezier(0.4, 0, 0.2, 1); */
 
 }
 
@@ -450,8 +459,12 @@ section.hero {
 
   cursor: pointer;
 
+  /* transition: background-color 5000ms cubic-bezier(0.4, 0, 0.2, 1); */
 }
 
+/* .close-x:hover .backdrop-hero.is-hidden {
+   transition: opacity 5000ms cubic-bezier(0.4, 0, 0.2, 1);
+} */
 
 
 /* section advantage */
@@ -465,7 +478,6 @@ section.advantage {
 
 .advantage-list {
   display: flex;
-
   gap: 30px;
 }
 
@@ -658,16 +670,13 @@ section.regular-clients {
   align-items: center;
   fill: var(--color-icon);
 
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .regular-clients-list-link:hover,
 .regular-clients-list-link:focus {
   border-color: var(--font-color-on);
   fill: var(--font-color-on);
-
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
- 
 }
 
 
@@ -710,7 +719,7 @@ section.portfolio {
 
   text-align: center;
 
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 
@@ -720,8 +729,6 @@ section.portfolio {
   background-color: var(--font-color-on);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
-
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .work-examples-list {
@@ -744,11 +751,11 @@ section.portfolio {
 
 }
 
-.overlay-card-portfolio {
+/* .overlay-card-portfolio {
   position: absolute;
   width: 370px;
   height: 294px;
-  /* top: -100%; */
+  top: -100%;
   top: 0;
   right: 0;
   padding: 63px 24px;
@@ -760,24 +767,63 @@ section.portfolio {
 
   background-color: rgba(33, 150, 243, 0.9);
 
-  /* display: none; */
+  display: none;
 
-  /* transition: top 0.3s cubic-bezier(0.4, 0, 1, 1) 0s; */
+  transition: top 0.3s cubic-bezier(0.4, 0, 1, 1) 0s;
   opacity: 0;
-  transition: opacity 1000sm linear 0;
+  transition: transform 1000ms linear;
+  opacity 1000sm linear 0,
 
-}
+} */
 
 
-.link-portfolio:hover .overlay-card-portfolio {
-  /* display: block; */
-  /* top: 0; */
+/* .link-portfolio:hover .overlay-card-portfolio {
+  display: block;
+  top: 0;
   opacity: 1;
-}
+  transform: translateY(-100%);
+} */
 
 .link-portfolio:hover,
 .link-portfolio:focus {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+}
+
+.img-example {
+  overflow: hidden;
+}
+
+.portfolio-single::before {
+  position: absolute;
+  width: 370px;
+  height: 294px;
+  /* top: -100%; */
+  top: 0;
+  right: 0;
+  content: "Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.";
+  padding: 63px 24px;
+
+  color: var(--color-white);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.55;
+
+  background-color: rgba(33, 150, 243, 0.9);
+
+  transform: translateY(100%);
+
+  /* overflow: hidden; */
+
+  opacity: 0;
+  transition: opacity 500ms linear, transform 500ms linear;
+  /* , translateY(-100%) 500ms linear; */
+  /* transition: opacity 1000ms linear; */
+}
+
+.link-portfolio:focus .portfolio-single::before,
+.link-portfolio:hover .portfolio-single::before {
+  transform: translateY(0%);
   opacity: 1;
 }
 
