@@ -409,21 +409,22 @@ section.hero {
 
   background-color: rgba(00,00,00, 0.8);
 
-  transition: opacity 5000ms cubic-bezier(0.4, 0, 0.2, 1);
-  /* , visibility  500ms cubic-bezier(0.4, 0, 0.2, 1) */
+  /* transform: scale(1); */
+
+  transition: opacity 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  /* , scale  5000ms cubic-bezier(0.4, 0, 0.2, 1) */
 }
 
-.button-success:hover .backdrop-her,
-.button-success:focus .backdrop-her {
+.button-success:hover .backdrop-hero,
+.button-success:focus .backdrop-hero {
 
 }
 
 .backdrop-hero.is-hidden {
   opacity: 0;
-  visibility: hidden;
+  /* transform: scale(0); */
   pointer-events: none;
 
-  /* transition: opacity 5000ms cubic-bezier(0.4, 0, 0.2, 1); */
 }
 
 .modal {
@@ -470,7 +471,9 @@ section.hero {
 /* .close-x:hover .backdrop-hero.is-hidden {
    transition: opacity 5000ms cubic-bezier(0.4, 0, 0.2, 1);
 } */
-
+/* .backdrop-hero .close-x {
+    transition: opacity 5000ms cubic-bezier(0.4, 0, 0.2, 1);
+} */
 
 /* section advantage */
 
