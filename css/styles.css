@@ -401,6 +401,7 @@ section.hero {
 
 .backdrop-hero {
   position: fixed;
+  z-index: 1;
   top: 0;
   left: 0;
 
@@ -409,22 +410,12 @@ section.hero {
 
   background-color: rgba(00,00,00, 0.8);
 
-  /* transform: scale(1); */
-
   transition: opacity 500ms cubic-bezier(0.4, 0, 0.2, 1);
-  /* , scale  5000ms cubic-bezier(0.4, 0, 0.2, 1) */
-}
-
-.button-success:hover .backdrop-hero,
-.button-success:focus .backdrop-hero {
-
 }
 
 .backdrop-hero.is-hidden {
   opacity: 0;
-  /* transform: scale(0); */
   pointer-events: none;
-
 }
 
 .modal {
@@ -434,33 +425,18 @@ section.hero {
 
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+
+  transform: translate(-50%, -50%) scale(1);
   
   background-color: var(--color-white);
 
-  /* transform-origin: center center; */
-  animation: animate-modal 3000ms 1 1000ms;
-
-  /* transform: scale(1); */
-
-  /* transition: scale 1000ms; */
-
-  /* transform: background-color 5000ms cubic-bezier(0.4, 0, 0.2, 1); */
-
+  transition: transform 1000ms;
 }
 
-@keyframes animate-modal {
-  0% {
-    transform: scale(0,25);
-  }
+.backdrop-hero.is-hidden .modal{
+  transform: translate(-50%, -50%) scale(0.3);
 
-  50% {
-    transform: scale(0.5);
-  }
-
-  100% {
-    transform: scale(1);
-  }
+  /* pointer-events: none; */
 }
 
 .close-x {
@@ -480,7 +456,6 @@ section.hero {
   align-items: center;
 
   cursor: pointer;
-
 }
 
 
@@ -737,7 +712,6 @@ section.portfolio {
   text-align: center;
 
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
 }
 
 .filter-button:hover,
@@ -757,7 +731,6 @@ section.portfolio {
 .card-portfolio {
   display: block;
   width: 370px;
-
 }
 
 .link-portfolio {
@@ -765,28 +738,24 @@ section.portfolio {
   position: relative;
 
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
 }
 
 .link-portfolio:hover,
 .link-portfolio:focus {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-
 }
 
 .img-example {
   overflow: hidden;
   position: relative;
-
 }
 
-.img-example::after {
+.backdrop-portfolio {
   position: absolute;
   /* width: 370px; */
   /* height: 294px; */
   top: 0;
   right: 0;
-  content: "Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.";
   padding: 63px 24px;
 
   color: var(--color-white);
@@ -802,14 +771,13 @@ section.portfolio {
   transition: opacity 500ms linear, transform 500ms linear;
 }
 
-.link-portfolio:focus .img-example::after,
-.link-portfolio:hover .img-example::after {
+.link-portfolio:focus .backdrop-portfolio,
+.link-portfolio:hover .backdrop-portfolio {
   transform: translateY(0%);
   opacity: 1;
 }
 
 .portfolio-single {
-
   padding-top: 20px;
   padding-left: 24px;
   padding-right: 24px;
@@ -818,7 +786,6 @@ section.portfolio {
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
-
 }
 
 .title-portfolio {
