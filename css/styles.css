@@ -115,6 +115,7 @@ header {
 .container-footer {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   /* padding-right: 0; */
 }
 
@@ -328,6 +329,12 @@ header {
   padding-right: 0;
 }
 
+.subscribe-form {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+
 .subscribe-imput {
   width: 358px;
   height: 50px;
@@ -337,7 +344,12 @@ header {
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
 
-  /* filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15)); */
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+
+  font-size: 16px;
+  line-height: 1.25;
+  color: rgba(255, 255, 255, 0.6);
+
   cursor: pointer;
 }
 
@@ -349,9 +361,9 @@ header {
   border-radius: 4px;
   border: solid 1px;
 
+  margin-top: 35px;
   margin-left: 12px;
   margin-right: 0;
-  /* padding: 10px 32px; */
 
   background-color: var(--font-color-on);
   border-color: var(--font-color-on);
@@ -374,6 +386,11 @@ header {
 .button-subscribe:hover,
 .button-subscribe:focus {
   color: var(--font-color-title);
+}
+
+.subscribe-icon {
+  /* margin: 13px 18px 13px 10px; */
+  fill: currentColor;
 }
 
 /* section hero */

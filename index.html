@@ -590,13 +590,18 @@
           </ul>
         </div>
         <div class="subscribe">
-          <p class="subscribe-title">Підпишіться на розсилку</p>
+          <!-- <p class="subscribe-title">Підпишіться на розсилку</p> -->
           <form class="subscribe-form">
-            <label for="email"></label>
-            <input class="subscribe-imput" type="email">
-            <button class="button-subscribe">Підписатися</button>
-          </form>          
+            <!-- <div class="subscribe-form-position"> -->
+            <label for="email" class="subscribe-title">Підпишіться на розсилку</label>
+            <input class="subscribe-imput" type="email" name="email" id="email" placeholder="E-mail">
+          </form>
         </div>
+            <button type="submit" class="button-subscribe">Підписатися
+                  <svg class="subscribe-icon" width="24" height="24">
+                  <use href="./img/sprite.svg#icon_send"></use>
+                </svg>
+            </button>
       </div>
     </footer>
         <!-- Backdrop and modal -->
