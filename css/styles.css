@@ -323,6 +323,8 @@ header {
   /* fill: var(--color-icon); */
 }
 
+/* subscribe footer */
+
 .subscribe {
   margin-left: 93px;
   margin-right: 0;
@@ -470,6 +472,8 @@ section.hero {
   color: var(--font-color-title);
 }
 
+/* backdrop-hero */
+
 .backdrop-hero {
   position: fixed;
   z-index: 1;
@@ -488,6 +492,8 @@ section.hero {
   opacity: 0;
   pointer-events: none;
 }
+
+/* modal */
 
 .modal {
   position: absolute;
@@ -538,6 +544,37 @@ section.hero {
 .close-x:hover .close-x-icon,
 .close-x:focus .close-x-icon {
   fill: var(--font-color-on);
+}
+
+.call-modal {
+  margin-top: 40px;
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-bottom: 12px;
+
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  color: var(--font-color-title);
+}
+
+.form-name {
+  margin-top: 10px;
+  margin-left: 40px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.1666;
+  letter-spacing: 0.01em;
+
+}
+
+.input-name {
+  width: 448px;
+  height: 40px;
+  margin-left: 40px;
 }
 
 /* section advantage */
