@@ -588,6 +588,10 @@ section.hero {
   padding: 12px;
 }
 
+textarea {
+  resize: none;
+}
+
 /* section advantage */
 
 section.advantage {
