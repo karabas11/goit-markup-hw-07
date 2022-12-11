@@ -596,10 +596,19 @@ section.hero {
 
 
 
-.input-name.commit {
+.input-name.comment {
   height: 120px;
   margin-bottom: 0;
   padding: 12px;
+}
+
+.comment {
+  font-style: normal;
+  font-size: 12px;
+  line-height: 1.1666;
+  letter-spacing: 0.01em;
+
+  color: rgba(117, 117, 117, 0.5);
 }
 
 textarea {
@@ -666,7 +675,6 @@ textarea {
 .send-button:focus {
   color: var(--font-color-title);
 }
-
 
 
 /* section advantage */
