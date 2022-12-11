@@ -578,6 +578,7 @@ section.hero {
   width: 448px;
   height: 40px;
   margin-left: 40px;
+  margin-bottom: 10px;
   border-radius: 4px;
 
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -585,12 +586,72 @@ section.hero {
 
 .input-name.commit {
   height: 120px;
+  margin-bottom: 0;
   padding: 12px;
 }
 
 textarea {
   resize: none;
 }
+
+.check-button {
+  margin-top: 25px;
+  margin-left: 54px;
+  margin-right: 7px;
+}
+
+.heck-name {
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 1.71;
+
+}
+
+.link-chek {
+  color: var(--font-color-on);
+  text-decoration: underline;
+}
+
+.send-button {
+  display: inline-block;
+
+  min-width: 200px;
+  height: 50px;
+  border-radius: 4px;
+  border: solid 1px;
+
+  margin-top: 30px;
+  margin-bottom: 40px;
+  margin-right: 164px;
+  margin-left: 164px;
+
+  padding: 10px 52px;
+
+  background-color: var(--font-color-on);
+  border-color: var(--font-color-on);
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 0.06em;
+  font-family: inherit;
+  color: var(--color-white);
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  cursor: pointer;
+}
+
+.send-button:hover,
+.send-button:focus {
+  color: var(--font-color-title);
+}
+
+
 
 /* section advantage */
 
