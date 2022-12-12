@@ -107,15 +107,16 @@ header {
 
 .footer-class {
   background-color: var(--fon-footer);
+  height: 252px;
   padding-top: 60px;
   padding-bottom: 60px;
-  margin-bottom: 0;
+  /* margin-bottom: 0; */
 }
 
 .container-footer {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start;
   /* padding-right: 0; */
 }
 
@@ -238,8 +239,8 @@ header {
 }
 
 .address-map {
-  display: inline-block;
-  margin-bottom: 0;
+  display: block;
+  margin-bottom: 9px;
 }
 
 .address-up:focus,
@@ -288,14 +289,21 @@ header {
   margin-top: 20px;
 }
 
+.footer-address {
+  display: block;
+  margin-right: 70px;
+}
+
 .join {
-  margin-left: 86px;
+  /* margin-left: px; */
 }
 
 .join-title,
 .subscribe-title {
   margin-top: 0px;
   margin-bottom: 20px;
+  padding: 0;
+
   color: var(--color-white);
   font-size: 14px;
   font-weight: 700;
@@ -325,22 +333,29 @@ header {
 
 /* subscribe footer */
 
-.subscribe {
-  margin-left: 93px;
-  margin-right: 0;
-  padding-right: 0;
-}
-
 .subscribe-form {
   display: flex;
-  flex-direction: column;
-  margin: 0;
+  align-items: center;
+  justify-content: flex-end;
 }
 
-.subscribe-imput {
+.subscribe-form-wraper {
+  display: flex;
+  flex-direction: column;
+  margin-left: 93px;
+  
+}
+
+.subscribe-title {
+  display: block;
+  padding: 0;
+}
+
+.subscribe-input {
   width: 358px;
   height: 50px;
-  padding-left: 16px;
+
+  padding-left: 20px;
 
   background-color: var(--fon-footer);
 
@@ -356,6 +371,11 @@ header {
   cursor: pointer;
 }
 
+.subscribe-input:focus {
+  outline: none;
+  border: 1px solid var(--font-color-on);
+}
+
 .button-subscribe {
   display: block;
   position: relative;
@@ -369,6 +389,10 @@ header {
   margin-left: 12px;
   margin-right: 0;
 
+  /* padding: 10px 28px;
+  text-decoration: none;
+  text-align: center; */
+
   background-color: var(--font-color-on);
   border-color: var(--font-color-on);
 
@@ -377,8 +401,6 @@ header {
   line-height: 1.9;
   letter-spacing: 0.06em;
   font-family: inherit;
-  /* text-decoration: none; */
-  /* text-align: center; */
   color: var(--color-white);
 
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -393,8 +415,6 @@ header {
 .button-subscribe:focus {
   color: var(--font-color-title);
 }
-
-
 
 .subscribe-icon {
   position: absolute;
@@ -520,7 +540,8 @@ section.hero {
 
   background-color: var(--color-white);
 
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
 
   transition: transform 1000ms;
 }
@@ -571,7 +592,6 @@ section.hero {
 }
 
 .form-name {
-  position: relative;
   display: block;
 
   font-style: normal;
@@ -582,6 +602,7 @@ section.hero {
 }
 
 .input-name {
+  position: relative;
   width: 100%;
   height: 40px;
   margin-top: 4px;
@@ -607,9 +628,8 @@ section.hero {
   width: 18px;
   height: 18px;
 
-  top: 43%;
+  top: 50%;
   left: 12px;
-  /* transform: translateY(50%); */
 
   fill: var(--font-color-black);
 
@@ -722,7 +742,6 @@ textarea {
 .send-button:focus {
   color: var(--font-color-title);
 }
-
 
 /* section advantage */
 

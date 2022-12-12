@@ -508,7 +508,7 @@
     </main>
     <footer class="footer-class">
       <div class="container container-footer">
-        <div>
+        <div class="footer-address">
           <a href="./index.html" lang="en" class="webstudio-footer">
             <span class="webstudio-blue">Web</span>Studio</a
           >
@@ -589,28 +589,27 @@
             </li>
           </ul>
         </div>
-        <div class="subscribe">
-          <!-- <p class="subscribe-title">Підпишіться на розсилку</p> -->
-          <form class="subscribe-form">
-            <!-- <div class="subscribe-form-position"> -->
-            <label for="email" class="subscribe-title"
-              >Підпишіться на розсилку</label
-            >
-            <input
-              class="subscribe-imput"
-              type="email"
-              name="email"
-              id="email"
-              placeholder="E-mail"
+        <!-- <div class="subscribe"> -->
+        <!-- <p class="subscribe-title">Підпишіться на розсилку</p> -->
+        <form class="subscribe-form">
+          <div class="subscribe-form-wraper">
+            <label for="email" class="subscribe-title">Підпишіться на розсилку</label>
+              <input
+                class="subscribe-input"
+                type="email"
+                name="email"
+                id="email"
+                placeholder="E-mail"
             />
-          </form>
-        </div>
-        <button class="button-subscribe" type="submit">
-          Підписатися
-          <svg class="subscribe-icon" width="24" height="24">
-            <use href="./img/sprite.svg#icon_send"></use>
-          </svg>
-        </button>
+          </div>
+          <button class="button-subscribe" type="submit">
+            Підписатися
+            <svg class="subscribe-icon" width="24" height="24">
+              <use href="./img/sprite.svg#icon_send"></use>
+            </svg>
+          </button>
+        </form>
+        <!-- </div> -->
       </div>
     </footer>
     <!-- Backdrop and modal -->
@@ -657,22 +656,23 @@
           </svg>
         </label>
         <label class="form-name" for="coment">Коментар</label>
-          <textarea
-            class="input-name comment"
-            name="comment"
-            id="coment"
-            placeholder="Введіть текст"
-            optional
-          ></textarea>
-          <label class="check-name" name="user-check" for="check"
-            ><input
+        <textarea
+          class="input-name comment"
+          name="comment"
+          id="coment"
+          placeholder="Введіть текст"
+          optional
+        ></textarea>
+        <label class="check-name" name="user-check" for="check"
+          ><input
             class="check-button"
             value="rules-on"
             type="checkbox"
             id="check"
             required
-          /><span class="check-berd"></span> *Погоджуюся з розсилкою та приймаю<a class="link-check" href="#check">Умови договору</a></label
-          >
+          /><span class="check-berd"></span> *Погоджуюся з розсилкою та
+          приймаю<a class="link-check" href="#check">Умови договору</a></label
+        >
         <button class="send-button" type="submit">Відправити</button>
       </div>
     </div>
