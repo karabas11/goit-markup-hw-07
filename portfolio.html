@@ -279,7 +279,7 @@
     </main>
     <footer class="footer-class">
       <div class="container container-footer">
-        <div>
+        <div class="footer-address">
           <a href="./index.html" lang="en" class="webstudio-footer">
             <span class="webstudio-blue">Web</span>Studio</a
           >
@@ -360,28 +360,24 @@
             </li>
           </ul>
         </div>
-        <div class="subscribe">
-          <!-- <p class="subscribe-title">Підпишіться на розсилку</p> -->
-          <form class="subscribe-form">
-            <!-- <div class="subscribe-form-position"> -->
-            <label for="email" class="subscribe-title"
-              >Підпишіться на розсилку</label
-            >
-            <input
-              class="subscribe-imput"
-              type="email"
-              name="email"
-              id="email"
-              placeholder="E-mail"
+        <form class="subscribe-form">
+          <div class="subscribe-form-wraper">
+            <label for="email" class="subscribe-title">Підпишіться на розсилку</label>
+              <input
+                class="subscribe-input"
+                type="email"
+                name="email"
+                id="email"
+                placeholder="E-mail"
             />
-          </form>
-        </div>
-        <button class="button-subscribe" type="submit">
-          Підписатися
-          <svg class="subscribe-icon" width="24" height="24">
-            <use href="./img/sprite.svg#icon_send"></use>
-          </svg>
-        </button>
+          </div>
+          <button class="button-subscribe" type="submit">
+            Підписатися
+            <svg class="subscribe-icon" width="24" height="24">
+              <use href="./img/sprite.svg#icon_send"></use>
+            </svg>
+          </button>
+        </form>
       </div>
     </footer>
   </body>
