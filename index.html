@@ -593,60 +593,95 @@
           <!-- <p class="subscribe-title">Підпишіться на розсилку</p> -->
           <form class="subscribe-form">
             <!-- <div class="subscribe-form-position"> -->
-            <label for="email" class="subscribe-title">Підпишіться на розсилку</label>
-            <input class="subscribe-imput" type="email" name="email" id="email" placeholder="E-mail">
+            <label for="email" class="subscribe-title"
+              >Підпишіться на розсилку</label
+            >
+            <input
+              class="subscribe-imput"
+              type="email"
+              name="email"
+              id="email"
+              placeholder="E-mail"
+            />
           </form>
         </div>
-            <button class="button-subscribe" type="submit">Підписатися
-              <svg class="subscribe-icon" width="24" height="24">
-                <use href="./img/sprite.svg#icon_send"></use>
-              </svg>
-            </button>
+        <button class="button-subscribe" type="submit">
+          Підписатися
+          <svg class="subscribe-icon" width="24" height="24">
+            <use href="./img/sprite.svg#icon_send"></use>
+          </svg>
+        </button>
       </div>
     </footer>
-        <!-- Backdrop and modal -->
-        <div class="backdrop-hero is-hidden" data-modal>
-          <div class="modal">
-            <button class="close-x" data-modal-close>
-              <svg class="close-x-icon" width="18" height="18">
-                <use
-                  href="./img/sprite.svg#close-x"
-                  width="18"
-                  height="18"
-                ></use>
-              </svg>
-            </button>
-            <p class="call-modal">Залиште свої дані, ми вам передзвонимо</p>
-            <label class="form-name" for="name">Ім'я*
-              <input class="input-name" name="user-name" type="text" id="name" required autofocus>
-              <svg class="form-icon" width="18" height="18">
-                <use href="./img/sprite.svg#person_black"></use>
-              </svg>
-            </label>
-            <label class="form-name" for="phone" required>Телефон*
-              <input class="input-name" name="user-phone" type="tel" id="phone">
-              <svg class="form-icon" width="18" height="18">
-                <use href="./img/sprite.svg#phone_black"></use>
-              </svg>
-            </label>
-            <label class="form-name" for="e-mail">Пошта*
-              <input class="input-name" name="user-email" type="email" id="e-mail" required>
-              <svg class="form-icon" width="18" height="18">
-                <use href="./img/sprite.svg#email_black"></use>
-              </svg>
-            </label>
-            <label class="form-name" for="coment">Коментар</label>
-            <div>
-              <textarea class="input-name comment" name="comment" id="coment" placeholder="Введіть текст" optional></textarea>
-            </div>
-            <div>
-              <input class="check-button" value="rules-on" type="checkbox" id="check" required>
-            <label class="check-name" name="user-check" for="check">*Погоджуюся з розсилкою та приймаю <a class="link-check" href="#check">Умови договору</a></label>
-            </div>
-            <button class="send-button" type="submit">Відправити</button>
-
-          </div>
+    <!-- Backdrop and modal -->
+    <div class="backdrop-hero is-hidden" data-modal>
+      <div class="modal">
+        <button class="close-x" data-modal-close>
+          <svg class="close-x-icon" width="18" height="18">
+            <use href="./img/sprite.svg#close-x" width="18" height="18"></use>
+          </svg>
+        </button>
+        <p class="call-modal">Залиште свої дані, ми вам передзвонимо</p>
+        <label class="form-name" for="name"
+          >Ім'я*
+          <input
+            class="input-name"
+            name="user-name"
+            type="text"
+            id="name"
+            required
+            autofocus
+          />
+          <svg class="form-icon" width="18" height="18">
+            <use href="./img/sprite.svg#person_black"></use>
+          </svg>
+        </label>
+        <label class="form-name" for="phone" required
+          >Телефон*
+          <input class="input-name" name="user-phone" type="tel" id="phone" />
+          <svg class="form-icon" width="18" height="18">
+            <use href="./img/sprite.svg#phone_black"></use>
+          </svg>
+        </label>
+        <label class="form-name" for="e-mail"
+          >Пошта*
+          <input
+            class="input-name"
+            name="user-email"
+            type="email"
+            id="e-mail"
+            required
+          />
+          <svg class="form-icon" width="18" height="18">
+            <use href="./img/sprite.svg#email_black"></use>
+          </svg>
+        </label>
+        <label class="form-name" for="coment">Коментар</label>
+        <div>
+          <textarea
+            class="input-name comment"
+            name="comment"
+            id="coment"
+            placeholder="Введіть текст"
+            optional
+          ></textarea>
         </div>
+        <div>
+          <input
+            class="check-button"
+            value="rules-on"
+            type="checkbox"
+            id="check"
+            required
+          />
+          <label class="check-name" name="user-check" for="check"
+            >*Погоджуюся з розсилкою та приймаю
+            <a class="link-check" href="#check">Умови договору</a></label
+          >
+        </div>
+        <button class="send-button" type="submit">Відправити</button>
+      </div>
+    </div>
     <script src="./js/modal.js"></script>
   </body>
 </html>
