@@ -294,10 +294,6 @@ header {
   margin-right: 70px;
 }
 
-.join {
-  /* margin-left: px; */
-}
-
 .join-title,
 .subscribe-title {
   margin-top: 0px;
@@ -593,7 +589,7 @@ section.hero {
 
 .form-name {
   display: block;
-
+  position: relative;
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
@@ -602,7 +598,7 @@ section.hero {
 }
 
 .input-name {
-  position: relative;
+
   width: 100%;
   height: 40px;
   margin-top: 4px;
@@ -628,7 +624,7 @@ section.hero {
   width: 18px;
   height: 18px;
 
-  top: 50%;
+  top: 43%;
   left: 12px;
 
   fill: var(--font-color-black);
