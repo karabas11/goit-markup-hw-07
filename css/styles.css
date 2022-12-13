@@ -692,6 +692,10 @@ textarea {
   border: solid 2px var(--font-color-black);
 }
 
+.check-button:focus + .check-berd {
+  border: solid 2px var(--font-color-on);
+}
+
 .check-button:checked + .check-berd {
   border-color: var(--font-color-on);
   background-color: var(--font-color-on);
