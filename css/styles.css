@@ -675,7 +675,6 @@ textarea {
 }
 
 .link-check {
-  margin-left: 4px;
   color: var(--font-color-on);
   text-decoration: underline;
 }
