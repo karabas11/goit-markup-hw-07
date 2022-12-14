@@ -694,12 +694,7 @@ textarea {
   border-radius: 2px;
 }
 
-.check-button:focus + .check-berd {
-  /*  */
-}
-
 .check-button:checked + .check-berd {
-  /* border: solid 2px var(--font-color-on); */
   border-color: var(--font-color-on);
   background-color: var(--font-color-on);
   background-image: url(../img/icon-check.svg);
