@@ -31,6 +31,7 @@ ul {
 a {
   text-decoration: none;
   color: var(--font-color-black);
+  /* outline: none; */
 }
 
 body {
@@ -130,11 +131,6 @@ header {
   transition: font-weight 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.webstudio-footer {
-  color: var(--color-white);
-  margin-bottom: 20px;
-}
-
 .webstudio-blue {
   color: var(--font-color-on);
 }
@@ -223,6 +219,15 @@ header {
   margin-right: 10px;
 }
 
+
+.webstudio-footer {
+  color: var(--color-white);
+}
+
+.address-down-list:not(:last-child) {
+  margin-bottom: 9px;
+}
+
 .address-map,
 .address-all {
   line-height: 1.7;
@@ -233,13 +238,10 @@ header {
 .address-all {
   color: rgba(255, 255, 255, 0.6);
   display: inline-block;
-  margin-top: 9px;
-  margin-bottom: 0;
 }
 
 .address-map {
   display: block;
-  margin-bottom: 9px;
 }
 
 .address-up:focus,
@@ -410,6 +412,7 @@ header {
 .button-subscribe:hover,
 .button-subscribe:focus {
   background-color: var(--font-color-on-button);
+  /* outline: none; */
 }
 
 .subscribe-icon {
@@ -496,6 +499,7 @@ section.hero {
 .button-success:hover,
 .button-success:focus {
   background-color: var(--font-color-on-button);
+  /* outline: none; */
 }
 
 /* backdrop-hero */
@@ -571,9 +575,14 @@ section.hero {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.close-x:focus {
+  /* outline: none; */
+}
+
 .close-x:hover .close-x-icon,
 .close-x:focus .close-x-icon {
   fill: var(--font-color-on);
+
 }
 
 .call-modal {
@@ -702,6 +711,10 @@ textarea {
   background-origin: border-box;
 }
 
+.check-button:focus + .check-berd {
+  border-color: var(--font-color-on);
+}
+
 .send-button {
   display: block;
 
@@ -736,6 +749,7 @@ textarea {
 .send-button:hover,
 .send-button:focus {
   background-color: var(--font-color-on-button);
+  /* outline: none; */
 }
 
 /* section advantage */
