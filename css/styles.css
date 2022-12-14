@@ -3,6 +3,7 @@
   --font-color-man: #757575;
   --font-color-title: #212121;
   --font-color-on: #2196f3;
+  --font-color-on-button: #188CE8;
   --border-color: #ececec;
   --color-white: #ffffff;
   --font-color-black: #000000;
@@ -398,15 +399,14 @@ header {
 
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   cursor: pointer;
 }
 
 .button-subscribe:hover,
 .button-subscribe:focus {
-  color: var(--font-color-title);
+  background-color: var(--font-color-on-button);
 }
 
 .subscribe-icon {
@@ -485,15 +485,14 @@ section.hero {
 
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   cursor: pointer;
 }
 
 .button-success:hover,
 .button-success:focus {
-  color: var(--font-color-title);
+  background-color: var(--font-color-on-button);
 }
 
 /* backdrop-hero */
@@ -688,19 +687,21 @@ textarea {
   width: 16px;
   height: 15px;
   margin-right: 9px;
-  border: solid 2px var(--font-color-black);
+  border: 2px solid var(--font-color-black);
+  border-radius: 2px;
 }
 
 .check-button:focus + .check-berd {
-  border: solid 2px var(--font-color-on);
+  /*  */
 }
 
 .check-button:checked + .check-berd {
+  /* border: solid 2px var(--font-color-on); */
   border-color: var(--font-color-on);
   background-color: var(--font-color-on);
   background-image: url(../img/icon-check.svg);
   background-size: contain;
-  background-origin: center;
+  background-origin: border-box;
 }
 
 .send-button {
@@ -729,15 +730,14 @@ textarea {
 
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   cursor: pointer;
 }
 
 .send-button:hover,
 .send-button:focus {
-  color: var(--font-color-title);
+  background-color: var(--font-color-on-button);
 }
 
 /* section advantage */
