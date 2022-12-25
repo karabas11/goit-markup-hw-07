@@ -1,18 +1,26 @@
 {
-  "editor.suggestSelection": "first",
-  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-  "[html]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "files.autoSave": "afterDelay",
-  "liveServer.settings.donotShowInfoMsg": true,
-  "prettier.arrowParens": "avoid",
-  "prettier.printWidth": 120,
-  "prettier.proseWrap": "never",
-  "prettier.trailingComma": "all",
-  "prettier.useTabs": true,
-  "editor.tabSize": 2,
-  "[css]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  }
+    "prettier.arrowParens": "avoid",
+    "prettier.bracketSameLine": false,
+    "prettier.printWidth": 120,
+    "prettier.proseWrap": "never",
+    "prettier.trailingComma": "all",
+    "prettier.useTabs": true,
+    "editor.tabSize": 2,
+    "liveSassCompile.settings.formats": [
+        {
+          "format": "expanded",
+          "extensionName": ".css",
+          "savePath": "/css"
+        },
+        {
+          "format": "compressed",
+          "extensionName": ".min.css",
+          "savePath": "/css"
+        }
+      ],
+
+    "liveSassCompile.settings.excludeList": ["**/node_modules/**", ".vscode/**"],
+    "liveSassCompile.settings.generateMap": true,
+    "liveSassCompile.settings.autoprefix": ["> 1%", "last 2 versions"]
+
 }
