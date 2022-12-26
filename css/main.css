@@ -12,6 +12,12 @@
   --color-icon: #afb1b8;
 }
 
+.hide-it {
+  visibility: hidden;
+  pointer-events: none;
+  position: absolute;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   color: var(--font-color-man);
@@ -49,6 +55,15 @@ img {
 
 address {
   font-style: normal;
+}
+
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+  width: 1200px;
+  /* outline: 2px solid teal; */
 }
 
 /* logo WebStudio*/
