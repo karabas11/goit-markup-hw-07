@@ -19,32 +19,6 @@
 
 /* SECTIONS */
 
-/* logo */
-.webstudio,
-.webstudio-footer {
-  font-family: "Raleway", sans-serif;
-  color: var(--font-color-black);
-  font-weight: 700;
-  font-size: 26px;
-
-  transition: font-weight 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.webstudio-blue {
-  color: var(--font-color-on);
-}
-
-.webstudio-footer {
-  color: var(--color-white);
-}
-
-.webstudio:hover,
-.webstudio:focus,
-.webstudio-footer:hover,
-.webstudio-footer:focus {
-  font-weight: 900;
-}
-
 /* header and footer */
 header {
   background-color: var(--color-white);
