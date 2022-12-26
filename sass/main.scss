@@ -1,10 +1,10 @@
 // main.scss
+@import './utils/utils';
 @import './base/base';
 @import './components/components';
 @import './layout/layout';
 @import './pages/pages';
 @import './themes/themes';
-@import './utils/utils';
 @import './vendors/vendors';
 
 //@import './utils/variables';
