@@ -1,6 +1,5 @@
 /* logo */
-.webstudio,
-.webstudio-footer {
+.webstudio{
   font-family: "Raleway", sans-serif;
   color: var(--font-color-black);
   font-weight: 700;
@@ -13,13 +12,11 @@
   color: var(--font-color-on);
 }
 
-.webstudio-footer {
+.webstudio--footer {
   color: var(--color-white);
 }
 
 .webstudio:hover,
-.webstudio:focus,
-.webstudio-footer:hover,
-.webstudio-footer:focus {
+.webstudio:focus {
   font-weight: 900;
 }
