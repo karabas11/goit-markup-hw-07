@@ -1,0 +1,12 @@
+footer {
+  background-color: var(--fon-footer);
+  height: 252px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  /* margin-bottom: 0; */
+}
+
+.container--footer {
+  display: flex;
+  align-items: baseline;
+}

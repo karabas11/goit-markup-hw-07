@@ -8,29 +8,6 @@
 
 /* SECTIONS */
 
-/* header and footer */
-header {
-  background-color: var(--color-white);
-  outline: 1px solid var(--border-color);
-}
-
-.nav-main {
-  display: flex;
-  align-items: center;
-}
-
-.footer-class {
-  background-color: var(--fon-footer);
-  height: 252px;
-  padding-top: 60px;
-  padding-bottom: 60px;
-  /* margin-bottom: 0; */
-}
-
-.container-footer {
-  display: flex;
-  align-items: baseline;
-}
 
 /* nav */
 .link,
@@ -67,24 +44,9 @@ header {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 } */
 
-.current::after {
-  display: inline-block;
-  content: "";
-  background-color: var(--font-color-on);
-  height: 4px;
-  width: 100%;
-  border-radius: 2px;
-
-  position: absolute;
-  left: 0;
-  bottom: 0;
-
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
 .link:hover,
-.link:focus,
-.link.current {
+.link:focus {
   color: var(--font-color-on);
 }
 
