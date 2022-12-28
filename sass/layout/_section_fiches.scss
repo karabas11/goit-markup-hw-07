@@ -1,0 +1,43 @@
+section.fiches {
+  padding-top: 0;
+  padding-bottom: 94px;
+  background-color: var(--color-white);
+}
+
+.fiches__title {
+  color: var(--font-color-title);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.2;
+  text-align: center;
+
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.fiches__list {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+
+.fiches__img {
+  position: relative;
+}
+
+.fiches__element {
+  position: absolute;
+  height: 70px;
+  width: 370px;
+  bottom: 0;
+  right: 0;
+
+  color: var(--color-white);
+  font-weight: 700;
+  line-height: 1.14;
+  text-align: center;
+  padding-top: 27px;
+  text-transform: uppercase;
+
+  background-color: rgba(47, 48, 58, 0.8);
+}
