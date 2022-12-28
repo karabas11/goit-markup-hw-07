@@ -10,65 +10,20 @@
 
 
 /* nav */
-.link,
-.address-up {
-  position: relative;
+
+
+
+
+
+/* Footer */
+
+.footer-address {
   display: block;
-  padding-top: 32px;
-  padding-bottom: 32px;
-
-  color: var(--font-color-title);
-  text-decoration: none;
-  font-weight: 500;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  margin-right: 94px;
 }
 
-/* .blue-line-studio {
-  background-color: var(--font-color-on);
-  height: 4px;
-  width: 48px;
-  border-radius: 2px;
-
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.blue-line-portfolio {
-  background-color: var(--font-color-on);
-  height: 4px;
-  width: 78px;
-  border-radius: 2px;
-
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-} */
-
-
-.link:hover,
-.link:focus {
-  color: var(--font-color-on);
-}
-
-/* Address */
-.address-up {
-  display: flex;
-  color: var(--font-color-man);
-  padding-left: 10px;
-}
-
-.icon-envelope {
-  fill: currentColor;
-  width: 16px;
-  height: 12px;
-  margin-right: 10px;
-}
-
-.icon-smartphone {
-  fill: currentColor;
-  width: 10px;
-  height: 16px;
-  margin-right: 10px;
+.address-down {
+  margin-top: 20px;
 }
 
 .address-down-list:not(:last-child) {
@@ -91,8 +46,6 @@
   display: block;
 }
 
-.address-up:focus,
-.address-up:hover,
 .address-map:hover,
 .address-map:focus,
 .address-all:hover,
@@ -100,47 +53,6 @@
   color: var(--font-color-on);
 }
 
-/* heder flex box */
-.nav-list {
-  display: flex;
-  margin-left: 93px;
-}
-
-.nav-list .item + .item {
-  margin-left: 50px;
-}
-
-/* .nav-list .item:not(:last-child) {
-    margin-right: 50px;
-} */
-
-.address-nav {
-  display: flex;
-  margin-left: auto;
-  /* align-items: center; */
-  /* justify-content: center; */
-}
-
-/* .address-nav .item {
-  align-items: center;
-} */
-
-/* .address-nav .item + .item {
-  margin-left: 50px;
-} */
-
-.address-nav .item:not(:last-child) {
-  margin-right: 30px;
-}
-
-.address-down {
-  margin-top: 20px;
-}
-
-.footer-address {
-  display: block;
-  margin-right: 94px;
-}
 
 .join-title,
 .subscribe-title {
