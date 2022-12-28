@@ -186,49 +186,11 @@
 
 /* section hero */
 
-section.hero {
-  display: block;
-  max-width: 1600px;
-  height: 600px;
 
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 200px;
-  padding-bottom: 200px;
-
-  text-align: center;
-  background-image: linear-gradient(
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
-    ),
-    url(../img/hero.jpg);
-
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  background-color: var(--backup-hero);
-}
-
-/* title hero*/
-.first-title {
-  width: 696px;
-
-  margin-top: 0px;
-  margin-bottom: 0px;
-  margin-right: auto;
-  margin-left: auto;
-
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: var(--color-white);
-}
 
 /* button hero*/
 /* ??? разобраться по крупицам */
-.button-success {
+.button--success {
   display: inline-block;
 
   min-width: 216px;
@@ -255,8 +217,8 @@ section.hero {
   cursor: pointer;
 }
 
-.button-success:hover,
-.button-success:focus {
+.button--success:hover,
+.button--success:focus {
   background-color: var(--font-color-on-button);
   /* outline: none; */
 }
@@ -513,48 +475,7 @@ textarea {
 
 /* section advantage */
 
-section.advantage {
-  padding-top: 94px;
-  padding-bottom: 94px;
 
-  background-color: var(--color-white);
-}
-
-.advantage-list {
-  display: flex;
-  gap: 30px;
-}
-
-.advantage-title {
-  margin: 0px;
-
-  font-size: 14px;
-  font-weight: 700;
-  line-height: 1.15;
-  text-transform: uppercase;
-  color: var(--font-color-title);
-}
-
-.advantage-img {
-  display: flex;
-
-  align-items: center;
-  justify-content: center;
-
-  width: 270px;
-  height: 120px;
-  border-radius: 4px;
-
-  margin-bottom: 30px;
-
-  background-color: var(--color-grey);
-}
-
-.advantage-text {
-  margin-top: 10px;
-  margin-bottom: 0px;
-  line-height: 1.7;
-}
 
 /* section fiches */
 
@@ -564,15 +485,7 @@ section.fiches {
   background-color: var(--color-white);
 }
 
-.fiches-list {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 50px;
-}
-
-.fiches-title,
-.command-title,
-.regular-clients-title {
+.fiches-title {
   color: var(--font-color-title);
   font-weight: 700;
   font-size: 36px;
@@ -581,6 +494,12 @@ section.fiches {
 
   margin-top: 0;
   margin-bottom: 0;
+}
+
+.fiches-list {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
 }
 
 .fiches-img {
@@ -609,6 +528,17 @@ section.command {
   background-color: var(--color-grey);
   padding-top: 94px;
   padding-bottom: 94px;
+}
+
+.command-title {
+  color: var(--font-color-title);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.2;
+  text-align: center;
+
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .command-list {
@@ -690,6 +620,13 @@ section.regular-clients {
 }
 
 .regular-clients-title {
+  color: var(--font-color-title);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.2;
+  text-align: center;
+
+  margin-top: 0;
   margin-bottom: 50px;
 }
 
