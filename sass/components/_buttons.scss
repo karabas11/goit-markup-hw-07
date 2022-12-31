@@ -1,0 +1,88 @@
+.button--subscribe {
+  display: inline-flex;
+  position: relative;
+
+  min-width: 200px;
+  height: 50px;
+  border-radius: 4px;
+  border: solid 1px;
+
+  margin-top: 35px;
+  margin-left: 12px;
+  margin-right: 0;
+
+  padding: 10px 28px;
+  text-decoration: none;
+  text-align: center;
+
+  background-color: var(--font-color-on);
+  border-color: var(--font-color-on);
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 0.06em;
+  font-family: inherit;
+  color: var(--color-white);
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  cursor: pointer;
+}
+
+.button--subscribe:hover,
+.button--subscribe:focus {
+  background-color: var(--font-color-on-button);
+  /* outline: none; */
+}
+
+.subscribe-icon {
+  position: absolute;
+  top: 30%;
+  right: 18px;
+  margin-left: 10px;
+  margin-right: 18px;
+
+  fill: currentColor;
+}
+
+/* section hero */
+
+
+
+/* button hero*/
+/* ??? разобраться по крупицам */
+.button--success {
+  display: inline-block;
+
+  min-width: 216px;
+  border-radius: 4px;
+  border: solid 1px;
+
+  margin-top: 30px;
+  padding: 10px 32px;
+
+  background-color: var(--font-color-on);
+  border-color: var(--font-color-on);
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 0.06em;
+  font-family: inherit;
+  color: var(--color-white);
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  cursor: pointer;
+}
+
+.button--success:hover,
+.button--success:focus {
+  background-color: var(--font-color-on-button);
+  /* outline: none; */
+}

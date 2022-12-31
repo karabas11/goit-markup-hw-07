@@ -1,3 +1,4 @@
+@charset "UTF-8";
 :root {
   --font-color-man: #757575;
   --font-color-title: #212121;
@@ -307,7 +308,7 @@ address {
   fill: var(--font-color-on);
 }
 
-.form-name {
+.form__name {
   display: block;
   position: relative;
   font-style: normal;
@@ -317,7 +318,7 @@ address {
   letter-spacing: 0.01em;
 }
 
-.input-name {
+.form__input-name {
   display: block;
   width: 100%;
   height: 40px;
@@ -331,12 +332,12 @@ address {
   cursor: pointer;
 }
 
-.input-name:focus {
+.form__input-name:focus {
   outline: none;
   border: 1px solid var(--font-color-on);
 }
 
-.form-icon {
+.form__icon {
   display: block;
   position: absolute;
   width: 18px;
@@ -348,17 +349,17 @@ address {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.form-name:focus-within > .form-icon {
+.form__name:focus-within > .form-icon {
   fill: var(--font-color-on);
 }
 
-.input-name.comment {
+.form__input-name--comment {
   height: 120px;
   margin-bottom: 0;
   padding: 12px;
 }
 
-.comment::-webkit-input-placeholder {
+.form__input-name--comment::-webkit-input-placeholder {
   font-style: normal;
   font-size: 12px;
   line-height: 1.1666;
@@ -366,7 +367,7 @@ address {
   color: rgba(117, 117, 117, 0.5);
 }
 
-.comment::-moz-placeholder {
+.form__input-name--comment::-moz-placeholder {
   font-style: normal;
   font-size: 12px;
   line-height: 1.1666;
@@ -374,7 +375,7 @@ address {
   color: rgba(117, 117, 117, 0.5);
 }
 
-.comment:-ms-input-placeholder {
+.form__input-name--comment:-ms-input-placeholder {
   font-style: normal;
   font-size: 12px;
   line-height: 1.1666;
@@ -382,7 +383,7 @@ address {
   color: rgba(117, 117, 117, 0.5);
 }
 
-.comment::-ms-input-placeholder {
+.form__input-name--comment::-ms-input-placeholder {
   font-style: normal;
   font-size: 12px;
   line-height: 1.1666;
@@ -390,7 +391,7 @@ address {
   color: rgba(117, 117, 117, 0.5);
 }
 
-.comment::placeholder {
+.form__input-name--comment::placeholder {
   font-style: normal;
   font-size: 12px;
   line-height: 1.1666;
@@ -402,14 +403,7 @@ textarea {
   resize: none;
 }
 
-.check-button {
-  margin-top: 25px;
-  margin-left: 14px;
-  margin-right: 7px;
-  cursor: pointer;
-}
-
-.check-name {
+.check__name {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -424,18 +418,12 @@ textarea {
   cursor: pointer;
 }
 
-.link-check {
+.form__link-check {
   color: var(--font-color-on);
   text-decoration: underline;
 }
 
-.check-button {
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
-}
-
-.check-berd {
+.form__check-berd {
   display: inline-block;
   width: 16px;
   height: 15px;
@@ -444,7 +432,17 @@ textarea {
   border-radius: 2px;
 }
 
-.check-button:checked + .check-berd {
+.form__check-button {
+  margin-top: 25px;
+  margin-left: 14px;
+  margin-right: 7px;
+  cursor: pointer;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
+.form__check-button:checked + .check-berd {
   border-color: var(--font-color-on);
   background-color: var(--font-color-on);
   background-image: url(../img/icon-check.svg);
@@ -452,8 +450,84 @@ textarea {
   background-origin: border-box;
 }
 
-.check-button:focus + .check-berd {
+.form__check-button:focus + .check-berd {
   border-color: var(--font-color-on);
+}
+
+.button--subscribe {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  position: relative;
+  min-width: 200px;
+  height: 50px;
+  border-radius: 4px;
+  border: solid 1px;
+  margin-top: 35px;
+  margin-left: 12px;
+  margin-right: 0;
+  padding: 10px 28px;
+  text-decoration: none;
+  text-align: center;
+  background-color: var(--font-color-on);
+  border-color: var(--font-color-on);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 0.06em;
+  font-family: inherit;
+  color: var(--color-white);
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+}
+
+.button--subscribe:hover,
+.button--subscribe:focus {
+  background-color: var(--font-color-on-button);
+  /* outline: none; */
+}
+
+.subscribe-icon {
+  position: absolute;
+  top: 30%;
+  right: 18px;
+  margin-left: 10px;
+  margin-right: 18px;
+  fill: currentColor;
+}
+
+/* section hero */
+/* button hero*/
+/* ??? разобраться по крупицам */
+.button--success {
+  display: inline-block;
+  min-width: 216px;
+  border-radius: 4px;
+  border: solid 1px;
+  margin-top: 30px;
+  padding: 10px 32px;
+  background-color: var(--font-color-on);
+  border-color: var(--font-color-on);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 0.06em;
+  font-family: inherit;
+  color: var(--color-white);
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+}
+
+.button--success:hover,
+.button--success:focus {
+  background-color: var(--font-color-on-button);
+  /* outline: none; */
 }
 
 header {
