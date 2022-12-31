@@ -1,0 +1,32 @@
+.close-x {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 8px;
+  right: 8px;
+
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: var(--color-white);
+  padding: 0px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  cursor: pointer;
+}
+
+.close-x-icon {
+  fill: var(--font-color-black);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.close-x:focus {
+  /* outline: none; */
+}
+
+.close-x:hover .close-x-icon,
+.close-x:focus .close-x-icon {
+  fill: var(--font-color-on);
+}
