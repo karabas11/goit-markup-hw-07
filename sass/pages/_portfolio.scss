@@ -1,0 +1,11 @@
+section.portfolio {
+  background-color: var(--color-white);
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.work-examples-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
