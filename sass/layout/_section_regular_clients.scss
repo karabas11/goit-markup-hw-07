@@ -38,10 +38,10 @@ section.regular-clients {
 
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.regular-clients__link:hover,
-.regular-clients__link:focus {
-  border-color: var(--font-color-on);
-  fill: var(--font-color-on);
+    &:hover,
+    &:focus {
+      border-color: var(--font-color-on);
+      fill: var(--font-color-on);
+    }
 }

@@ -10,9 +10,9 @@
   background-color: rgba(00, 00, 00, 0.8);
 
   transition: opacity 500ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.backdrop-hero.is-hidden {
-  opacity: 0;
-  pointer-events: none;
+  
+    &.is-hidden {
+      opacity: 0;
+      pointer-events: none;
+    }
 }

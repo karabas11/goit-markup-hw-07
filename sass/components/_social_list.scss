@@ -23,12 +23,12 @@
 
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.social-list__link:hover,
-.social-list__link:focus {
-  background-color: var(--font-color-on);
-  fill: var(--color-white);
+    &:hover,
+    &:focus {
+      background-color: var(--font-color-on);
+      fill: var(--color-white);
+    }
 }
 
 .social-list__link--gray {
@@ -42,12 +42,10 @@
   fill: var(--color-white);
 
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+      background-color: var(--font-color-on);
+      /* fill: var(--color-icon); */
+    }
 }
-
-.social-list__link--gray:hover,
-.social-list__link--gray:focus {
-  background-color: var(--font-color-on);
-
-  /* fill: var(--color-icon); */
-}
-

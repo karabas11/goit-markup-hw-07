@@ -30,12 +30,12 @@
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   cursor: pointer;
-}
 
-.button--subscribe:hover,
-.button--subscribe:focus {
-  background-color: var(--font-color-on-button);
-  /* outline: none; */
+    &:hover,
+    &:focus {
+      background-color: var(--font-color-on-button);
+      /* outline: none; */
+    }
 }
 
 .subscribe-icon {
@@ -48,12 +48,6 @@
   fill: currentColor;
 }
 
-/* section hero */
-
-
-
-/* button hero*/
-/* ??? разобраться по крупицам */
 .button--success {
   display: inline-block;
 
@@ -79,13 +73,15 @@
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   cursor: pointer;
+
+    &:hover,
+    &:focus {
+      background-color: var(--font-color-on-button);
+      /* outline: none; */
+    }
 }
 
-.button--success:hover,
-.button--success:focus {
-  background-color: var(--font-color-on-button);
-  /* outline: none; */
-}
+
 
 .button--send {
   display: block;
@@ -116,10 +112,10 @@
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   cursor: pointer;
-}
 
-.button--send:hover,
-.button--send:focus {
-  background-color: var(--font-color-on-button);
-  /* outline: none; */
+    &:hover,
+    &:focus {
+      background-color: var(--font-color-on-button);
+      /* outline: none; */
+    }
 }

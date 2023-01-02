@@ -22,11 +22,11 @@
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   cursor: pointer;
-}
 
-.form__input-name:focus {
-  outline: none;
-  border: 1px solid var(--font-color-on);
+    &:focus {
+      outline: none;
+      border: 1px solid var(--font-color-on);
+    }
 }
 
 .form__icon {
@@ -41,25 +41,25 @@
   fill: var(--font-color-black);
 
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.form__name:focus-within > .form-icon {
-  fill: var(--font-color-on);
+    .form__name:focus-within > & {
+      fill: var(--font-color-on);
+    }
 }
 
 .form__input-name--comment {
   height: 120px;
   margin-bottom: 0;
   padding: 12px;
-}
 
-.form__input-name--comment::placeholder {
-  font-style: normal;
-  font-size: 12px;
-  line-height: 1.1666;
-  letter-spacing: 0.01em;
+    &::placeholder {
+      font-style: normal;
+      font-size: 12px;
+      line-height: 1.1666;
+      letter-spacing: 0.01em;
 
-  color: rgba(117, 117, 117, 0.5);
+      color: rgba(117, 117, 117, 0.5);
+    }
 }
 
 textarea {
@@ -91,6 +91,19 @@ textarea {
   margin-right: 9px;
   border: 2px solid var(--font-color-black);
   border-radius: 2px;
+
+    .form__check-button:checked + & {
+      border-color: var(--font-color-on);
+      background-color: var(--font-color-on);
+      background-image: url(../img/icon-check.svg);
+      background-size: contain;
+      background-origin: border-box;
+    }
+
+  .form__check-button:focus + & {
+      border-color: var(--font-color-on);
+    }
+
 }
 
 .form__check-button {
@@ -102,14 +115,3 @@ textarea {
   appearance: none;
 }
 
-.form__check-button:checked + .form__check-berd {
-  border-color: var(--font-color-on);
-  background-color: var(--font-color-on);
-  background-image: url(../img/icon-check.svg);
-  background-size: contain;
-  background-origin: border-box;
-}
-
-.form__check-button:focus + .form__check-berd {
-  border-color: var(--font-color-on);
-}

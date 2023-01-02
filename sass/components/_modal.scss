@@ -17,11 +17,11 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
 
   transition: transform 1000ms;
-}
 
-.backdrop-hero.is-hidden .modal {
-  transform: translate(-50%, -50%) scale(0.3);
-  /* pointer-events: none; */
+    .backdrop-hero.is-hidden & {
+      transform: translate(-50%, -50%) scale(0.3);
+      /* pointer-events: none; */
+    }
 }
 
 .modal__call {
