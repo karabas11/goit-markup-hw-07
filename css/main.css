@@ -442,7 +442,7 @@ textarea {
           appearance: none;
 }
 
-.form__check-button:checked + .check-berd {
+.form__check-button:checked + .form__check-berd {
   border-color: var(--font-color-on);
   background-color: var(--font-color-on);
   background-image: url(../img/icon-check.svg);
@@ -450,7 +450,7 @@ textarea {
   background-origin: border-box;
 }
 
-.form__check-button:focus + .check-berd {
+.form__check-button:focus + .form__check-berd {
   border-color: var(--font-color-on);
 }
 
